@@ -60,7 +60,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 
 <!--~~ Static styles ~~-->
 <div id="styleArea">
-<style data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" data-tiddler-revision="0" data-tiddler-bag="default" type="text/css">/*
+<style data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
 Basic styles used before we boot up the parsing engine
 */
 
@@ -158,8 +158,6 @@ Error message and password prompt
 <li>$:/.giffmex/meta/hack.tiddlyblink</li>
 
 <li>$:/.giffmex/meta/TiddlyBlink.gears.and.doo-hickeys</li>
-
-<li>$:/.giffmex/sidebar/parallel</li>
 
 <li>$:/.giffmex/sidebar/parallel2</li>
 
@@ -331,6 +329,8 @@ Error message and password prompt
 
 <li>$:/tags/ViewToolbar</li>
 
+<li>$:/temp/info-plugin</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
@@ -405,7 +405,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div caption="hide" created="20200131144745512" modified="20200425182350021" tags="tb meta" title=".hideList" tmap.id="6b0be95e-df5e-46ff-8f8a-205131a4eb6f" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="hide" created="20200131144745512" modified="20200425182350021" revision="0" tags="tb meta" title=".hideList" tmap.id="6b0be95e-df5e-46ff-8f8a-205131a4eb6f" type="text/vnd.tiddlywiki">
 <pre>Add the tag `hide` or the tag `outlines` to any tiddler to keep it from appearing in the 'simple transclude' view of the references from other tiddlers. Tiddlers with either tag will appear here.
 
 &lt;&lt;list-search
@@ -415,7 +415,7 @@ Error message and password prompt
 &quot;$:/core/ui/ListItemTemplate&quot;
 placeholder:&quot;&quot; &gt;&gt;</pre>
 </div>
-<div caption="sources" created="20200131035322127" modified="20200425182350147" tags="tb meta" title=".sourcesList" tmap.id="8b1a2784-ef29-49f4-b5e7-7953c9ea75e7" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="sources" created="20200131035322127" modified="20200425182350147" revision="0" tags="tb meta" title=".sourcesList" tmap.id="8b1a2784-ef29-49f4-b5e7-7953c9ea75e7" type="text/vnd.tiddlywiki">
 <pre>Tag tiddlers with the tag `sources` if they are book chapters, articles, or webpages. They will appear here and will also appear as references below the tiddlers linked to from them.
 
 &lt;&lt;list-search
@@ -425,7 +425,7 @@ placeholder:&quot;&quot; &gt;&gt;</pre>
 &quot;$:/core/ui/ListItemTemplate&quot;
 placeholder:&quot;&quot; &gt;&gt;</pre>
 </div>
-<div caption="topics" created="20200128030955660" modified="20200425182350163" tags="tb meta" title=".topicList" tmap.id="5cf9f87f-9741-468c-bb15-9fc0fea9472e" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="topics" created="20200128030955660" modified="20200425182350163" revision="0" tags="tb meta" title=".topicList" tmap.id="5cf9f87f-9741-468c-bb15-9fc0fea9472e" type="text/vnd.tiddlywiki">
 <pre>Topics are any notes that do not have `202` in their title field (i.e., tiddlers created with the clock icon buttons), and are not tagged with any of the following tags: `hide`, `meta`, `outlines`, or `sources`. 
 
 &lt;&lt;list-search
@@ -435,7 +435,7 @@ placeholder:&quot;&quot; &gt;&gt;</pre>
 &quot;$:/core/ui/ListItemTemplate&quot;
 placeholder:&quot;&quot; &gt;&gt;</pre>
 </div>
-<div created="20191010123116672" creator="nate" modified="20200425192212009" modifier="nate" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4tiddlyblink" type="text/css" revision="0" bag="default">
+<div bag="default" created="20191010123116672" creator="nate" modified="20200425192212009" modifier="nate" revision="0" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4tiddlyblink" type="text/css">
 <pre>/*BOXES*/
 
 html body.tc-body .graybox {display:block;background-color:#eee;padding:5px;padding-left:20px;padding-top:10px;margin-top:5px;margin-bottom:5px;width:95%;}
@@ -561,7 +561,7 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 }
 </pre>
 </div>
-<div created="20200102141142879" modified="20200425181117138" tags="tb" title="$:/.giffmex/actions/new-journal" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200102141142879" modified="20200425181117138" revision="0" tags="tb" title="$:/.giffmex/actions/new-journal" type="text/vnd.tiddlywiki">
 <pre>&lt;$vars journalTitleTemplate={{$:/config/NewJournal/Title}} journalTags={{$:/config/NewJournal/Tags}} journalText=&quot;&quot;&gt;
 &lt;$wikify name=&quot;journalTitle&quot; text=&quot;&quot;&quot;&lt;$macrocall $name=&quot;now&quot; format=&lt;&lt;journalTitleTemplate&gt;&gt;/&gt;&quot;&quot;&quot;&gt;
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;journalTitle&gt;&gt; text=&quot;&quot;&gt;
@@ -574,7 +574,7 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournal/Caption}}" created="20200102141336827" description="{{$:/language/Buttons/NewJournal/Hint}}" modified="20200425181117148" tags="tb $:/tags/PageControls" title="$:/.giffmex/buttons/newnote-datetime" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournal/Caption}}" created="20200102141336827" description="{{$:/language/Buttons/NewJournal/Hint}}" modified="20200425181117148" revision="0" tags="tb $:/tags/PageControls" title="$:/.giffmex/buttons/newnote-datetime" type="text/vnd.tiddlywiki">
 <pre>\define journalButton()
 &lt;$button tooltip={{$:/language/Buttons/NewJournal/Hint}} aria-label={{$:/language/Buttons/NewJournal/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt; actions={{$:/.giffmex/actions/new-journal}}&gt;
 &lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
@@ -588,7 +588,7 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 &lt;&lt;journalButton&gt;&gt;
 </pre>
 </div>
-<div caption="Customize TiddlyBlink" created="20200127211244101" modified="20200425181117155" tags="tb starthere meta" title="$:/.giffmex/Customize.TiddlyBlink" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="Customize TiddlyBlink" created="20200127211244101" modified="20200425181117155" revision="0" tags="tb starthere meta" title="$:/.giffmex/Customize.TiddlyBlink" type="text/vnd.tiddlywiki">
 <pre>*Change the title and subtitle of this file
 **Edit [[$:/SiteTitle]] and [[$:/SiteSubtitle]]
 *Customize the date and time stamp when creating new notes 
@@ -599,7 +599,7 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 **To add to a word-by-word list of frequent wikiwords that should not be links, add them, comma-separated, to $:/sk/WhiteList
 **Nuclear option: To turn off //all //automatic wikiword linking, open $:/ControlPanel &gt; Settings &gt; uncheck the Camel Case Wiki Links checkbox</pre>
 </div>
-<div caption="Hacking TiddlyBlink" created="20200212220418203" modified="20200425181117160" tags="tb meta" title="$:/.giffmex/meta/hack.tiddlyblink" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="Hacking TiddlyBlink" created="20200212220418203" modified="20200425181117160" revision="0" tags="tb meta" title="$:/.giffmex/meta/hack.tiddlyblink" type="text/vnd.tiddlywiki">
 <pre>!!All references, in links and in regular text.
 
 We disabled references that do not appear in links. This was a feature in early versions of TiddlyBlink, but we and others found it produced a lot of unwanted references, and confusion as people clicked the link and did not have a link to return back to the previous tiddler.
@@ -621,7 +621,7 @@ with
 
 `regexp:text&lt;mycrit&gt;`</pre>
 </div>
-<div caption="TiddlyBlink gears and doo-hickeys" created="20200131181401307" modified="20200425181117166" tags="tb starthere meta" title="$:/.giffmex/meta/TiddlyBlink.gears.and.doo-hickeys" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="TiddlyBlink gears and doo-hickeys" created="20200131181401307" modified="20200425181117166" revision="0" tags="tb starthere meta" title="$:/.giffmex/meta/TiddlyBlink.gears.and.doo-hickeys" type="text/vnd.tiddlywiki">
 <pre>For those who want to understand ~TiddlyBlink better, tinker with it and customize it, here is the basic information (assuming you already know how ~TiddlyWiki works).
 
 ''General''
@@ -646,13 +646,10 @@ with
 *The blue clock button in the sidebar activates $:/.giffmex/buttons/newnote-datetime . This is set up to create a new tiddler with a date and timestamp in the title.
 *Clicking on a checkmark in the ~TiddlyBlink tab tags one of three tiddlers ($:/.giffmex/ViewTemplate/refscontext, $:/.giffmex/ViewTemplate/refslinks, $:/.giffmex/ViewTemplate/refstranscludeclean and $:/.giffmex/ViewTemplate/refstranscludecollapse) with the tag ~$:/tags/ViewTemplate, making them show up under the tiddler. Those three tiddlers grab all the text references to the current tiddler, and format them into either links, transclusions, or highlighted search results in context. The latter uses the [[ContextPlugin|$:/plugins/danielo515/ContextPlugin]]. </pre>
 </div>
-<div Paste a tiddler title to view tiddler in tab="&lt;$edit-text tiddler=&quot;$:/temp/sbartidddisplayvalue&quot; placeholder=&quot;tiddler title&quot; tag=&quot;input&quot; type=&quot;text&quot;/&gt;" created="20190624061203012" creator="Gloom" modified="20200425181117173" modifier="Gloom" purposedesc="text edit box for Show tiddler sidebar" tags="tb #template $:/.giffmex/sidebar/parallel2" title="$:/.giffmex/sidebar/parallel" type="application/x-tiddler" revision="2" bag="default">
-<pre></pre>
-</div>
-<div caption="parallel" created="20190624061500276" creator="Gloom" infodesc="For temporarily displaying a tiddler in the sidebar (without having to tag it). Type the tiddler title in the text field and tiddler will sidpay below it." modified="20200425181117183" modifier="Gloom" tags="tb $:/tags/SideBar *sidebar" title="$:/.giffmex/sidebar/parallel2" tooltip="For temporarily displaying a tiddler in the sidebar (without having to tag it)" type="application/x-tiddler" {{$="/.giffmex/sidebar/parallel}} &lt;br&gt;&lt;h2&gt;&lt;$list filter=&quot;[{$:/temp/sbartidddisplayvalue}is[tiddler]]&quot; emptyMessage=&quot;tiddler doesn't exist&quot; &gt;&lt;/$list&gt;&lt;/h2&gt;" revision="0" bag="default">
+<div bag="default" caption="parallel" created="20190624061500276" creator="Gloom" infodesc="For temporarily displaying a tiddler in the sidebar (without having to tag it). Type the tiddler title in the text field and tiddler will sidpay below it." modified="20200425181117183" modifier="Gloom" revision="0" tags="tb $:/tags/SideBar *sidebar" title="$:/.giffmex/sidebar/parallel2" tooltip="For temporarily displaying a tiddler in the sidebar (without having to tag it)" type="application/x-tiddler" {{$="/.giffmex/sidebar/parallel}} &lt;br&gt;&lt;h2&gt;&lt;$list filter=&quot;[{$:/temp/sbartidddisplayvalue}is[tiddler]]&quot; emptyMessage=&quot;tiddler doesn't exist&quot; &gt;&lt;/$list&gt;&lt;/h2&gt;">
 <pre>&lt;$transclude tiddler={{$:/temp/sbartidddisplayvalue}} mode=&quot;block&quot; /&gt;</pre>
 </div>
-<div caption="{{$:/core/images/options-button}}" created="20200129233103456" modified="20200425181117192" tags="tb $:/tags/SideBar" title="$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/options-button}}" created="20200129233103456" modified="20200425181117192" revision="0" tags="tb $:/tags/SideBar" title="$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols" type="text/vnd.tiddlywiki">
 <pre>\define tagreset() 
 &lt;$list filter=&quot;[tag[refs]sort[created]] -[[$(currentTiddler)$]]&quot; variable=&quot;removeme&quot;&gt;
 &lt;$action-listops  $tiddler=&lt;&lt;removeme&gt;&gt; $tags=&quot;+[remove[$:/tags/ViewTemplate]]&quot;/&gt;
@@ -684,7 +681,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="search results in context" created="20200102141715979" creator="nate" modified="20200425183425584" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="search results in context" created="20200102141715979" creator="nate" modified="20200425183425584" modifier="nate" revision="0" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext" type="text/vnd.tiddlywiki">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -695,7 +692,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="links" created="20200126143031898" creator="nate" modified="20200425191141086" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="links" created="20200126143031898" creator="nate" modified="20200425191141086" modifier="nate" revision="0" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -706,7 +703,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="simple transclusion" created="20200126142157739" creator="nate" modified="20200425191141102" modifier="nate" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="simple transclusion" created="20200126142157739" creator="nate" modified="20200425191141102" modifier="nate" revision="0" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki">
 <pre>&lt;hr&gt;
 
 References: &lt;br&gt;
@@ -714,7 +711,7 @@ References: &lt;br&gt;
 &lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[hide]!tag[outlines]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;span class=&quot;indent1&quot;&gt;&lt;$link&gt;&lt;span class=&quot;graybox&quot;&gt;&lt;$transclude field=&quot;text&quot; mode=&quot;block&quot; /&gt;&lt;/span&gt;&lt;/$link&gt;&lt;/span&gt;&lt;/$list&gt;
 </pre>
 </div>
-<div caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournalHere/Caption}}" created="20200127162624895" description="{{$:/language/Buttons/NewJournalHere/Hint}}" modified="20200425181117217" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/ViewToolbar/new-note-here" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournalHere/Caption}}" created="20200127162624895" description="{{$:/language/Buttons/NewJournalHere/Hint}}" modified="20200425181117217" revision="0" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/ViewToolbar/new-note-here" type="text/vnd.tiddlywiki">
 <pre>\define button()
 &lt;$button class=&lt;&lt;tv-config-toolbar-class&gt;&gt; actions=&lt;&lt;actions&gt;&gt;&gt;
 {{$:/core/images/new-button}}
@@ -730,7 +727,7 @@ References: &lt;br&gt;
 &lt;/$wikify&gt;
 </pre>
 </div>
-<div caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournalHere/Caption}}" created="20200127185823887" description="{{$:/language/Buttons/NewJournalHere/Hint}}" modified="20200425181117221" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/ViewToolbar/new-note-here-datetime" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/new-journal-button}} {{$:/language/Buttons/NewJournalHere/Caption}}" created="20200127185823887" description="{{$:/language/Buttons/NewJournalHere/Hint}}" modified="20200425181117221" revision="0" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/ViewToolbar/new-note-here-datetime" type="text/vnd.tiddlywiki">
 <pre>\whitespace trim
 
 \define journalButtonActions()
@@ -764,7 +761,7 @@ References: &lt;br&gt;
 &lt;/$set&gt;
 </pre>
 </div>
-<div caption="{{$:/core/images/preview-open}} {{$:/language/Buttons/More/Caption}}" created="20200210144315559" description="{{$:/language/Buttons/More/Hint}}" modified="20200425181117229" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/viewtoolbar/viewrefs" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/preview-open}} {{$:/language/Buttons/More/Caption}}" created="20200210144315559" description="{{$:/language/Buttons/More/Hint}}" modified="20200425181117229" revision="0" tags="tb $:/tags/ViewToolbar" title="$:/.giffmex/viewtoolbar/viewrefs" type="text/vnd.tiddlywiki">
 <pre>\whitespace trim
 \define config-title()
 $:/config/ViewToolbarButtons/Visibility/$(listItem)$
@@ -814,7 +811,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 
 &lt;/$reveal&gt;</pre>
 </div>
-<div caption="{{$:/core/images/options-button}}" created="20200129233103456" modified="20200425181117237" tags="tb $:/tags/ViewToolbar refview" title="$:/.giffmex/ViewToolbar/viewrefscheckboxes" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/options-button}}" created="20200129233103456" modified="20200425181117237" revision="0" tags="tb $:/tags/ViewToolbar refview" title="$:/.giffmex/ViewToolbar/viewrefscheckboxes" type="text/vnd.tiddlywiki">
 <pre>\define tagreset() 
 &lt;$list filter=&quot;[tag[refs]sort[created]] -[[$(currentTiddler)$]]&quot; variable=&quot;removeme&quot;&gt;
 &lt;$action-listops  $tiddler=&lt;&lt;removeme&gt;&gt; $tags=&quot;+[remove[$:/tags/ViewTemplate]]&quot;/&gt;
@@ -838,7 +835,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 
 {{build-and-export}}</pre>
 </div>
-<div created="20141202200448128" creator="Tobias Beer" modified="20200425181117242" modifier="Tobias Beer" summary="the [[list-search]] macro allows to filter list outputs" tags="tb $:/tags/Macro" title="$:/.tb/macros/list-search" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20141202200448128" creator="Tobias Beer" modified="20200425181117242" modifier="Tobias Beer" revision="0" summary="the [[list-search]] macro allows to filter list outputs" tags="tb $:/tags/Macro" title="$:/.tb/macros/list-search" type="text/vnd.tiddlywiki">
 <pre>\define list-search(
 filter:&quot;[tags[]]&quot;,
 search:&quot;search:title&quot;,
@@ -865,111 +862,110 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 &lt;/$reveal&gt;
 \end</pre>
 </div>
-<div created="20200426185349136" modified="20200426185449822" title="$:/About" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426185349136" modified="20200426185449822" revision="0" title="$:/About" type="text/vnd.tiddlywiki">
 <pre>Who is [[5n0p3]]? 
 
 {{5n0p3}}</pre>
 </div>
-<div created="20200426071243813" modified="20200426205600093" title="$:/config/DefaultSidebarTab" type="text/vnd.tiddlywiki" revision="3" bag="default">
+<div bag="default" created="20200426071243813" modified="20200426205600093" revision="3" title="$:/config/DefaultSidebarTab" type="text/vnd.tiddlywiki">
 <pre>ToC</pre>
 </div>
-<div created="20200426095630707" modified="20200426095630722" title="$:/config/DownloadSaver/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426095630707" modified="20200426095630722" revision="0" title="$:/config/DownloadSaver/AutoSave" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
-<div created="20200426072140657" creator="5n0p3" modified="20200426072140668" modifier="5n0p3" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-4" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426072140657" creator="5n0p3" modified="20200426072140668" modifier="5n0p3" revision="0" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-4" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20191215203357897" modified="20200425181116713" tags="tb" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20191215203357897" modified="20200425181116713" revision="0" tags="tb" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki" type="text/vnd.tiddlywiki">
 <pre>comptext</pre>
 </div>
-<div created="20200425191555777" creator="nate" modified="20200425191837391" modifier="nate" title="$:/config/Manager/Show" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425191555777" creator="nate" modified="20200425191837391" modifier="nate" revision="0" title="$:/config/Manager/Show" type="text/vnd.tiddlywiki">
 <pre>tiddlers</pre>
 </div>
-<div created="20200425191847434" creator="nate" modified="20200425191848900" modifier="nate" title="$:/config/Manager/System" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425191847434" creator="nate" modified="20200425191848900" modifier="nate" revision="0" title="$:/config/Manager/System" type="text/vnd.tiddlywiki">
 <pre>system</pre>
 </div>
-<div created="20200425182434949" modified="20200425182434949" title="$:/config/Navigation/openLinkFromInsideRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182434949" modified="20200425182434949" revision="0" title="$:/config/Navigation/openLinkFromInsideRiver" type="text/vnd.tiddlywiki">
 <pre>above</pre>
 </div>
-<div created="20200425182434966" modified="20200425182434966" title="$:/config/Navigation/openLinkFromOutsideRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182434966" modified="20200425182434966" revision="0" title="$:/config/Navigation/openLinkFromOutsideRiver" type="text/vnd.tiddlywiki">
 <pre>top</pre>
 </div>
-<div created="20200426071309080" creator="5n0p3" modified="20200426074308358" modifier="5n0p3" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426071309080" creator="5n0p3" modified="20200426074308358" modifier="5n0p3" revision="0" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki">
 <pre>no</pre>
 </div>
-<div created="20200426071302972" modified="20200426071302989" title="$:/config/Navigation/UpdateHistory" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426071302972" modified="20200426071302989" revision="0" title="$:/config/Navigation/UpdateHistory" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
-<div created="20200425182800266" modified="20200425182800266" tags="journal" title="$:/config/NewJournal/Tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182800266" modified="20200425182800266" revision="0" tags="journal" title="$:/config/NewJournal/Tags" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200425183610837" creator="nate" modified="20200425184343669" modifier="nate" title="$:/config/NewJournal/Text" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>
----
+<div bag="default" created="20200425183610837" creator="nate" modified="20200425184343669" modifier="nate" revision="0" title="$:/config/NewJournal/Text" type="text/vnd.tiddlywiki">
+<pre>---
 
 [[Journal Entry]]</pre>
 </div>
-<div created="20191225174624729" modified="20200425182844187" tags="tb" title="$:/config/NewJournal/Title" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20191225174624729" modified="20200425182844187" revision="0" tags="tb" title="$:/config/NewJournal/Title" type="text/vnd.tiddlywiki">
 <pre>YYYY/0MM/0DD @ 0hh:0mm - </pre>
 </div>
-<div created="20200425183646041" modified="20200426071157729" modifier="nate" tags="5n0p3" title="$:/config/NewTiddler/Tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425183646041" modified="20200426071157729" modifier="nate" revision="0" tags="5n0p3" title="$:/config/NewTiddler/Tags" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200425185514078" modified="20200425185514091" title="$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185514078" modified="20200425185514091" revision="0" title="$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200425185537858" modified="20200425185537870" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185537858" modified="20200425185537870" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200425185544708" modified="20200426182547765" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185544708" modified="20200426182547765" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200425185539959" modified="20200426182717662" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185539959" modified="20200426182717662" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200425185505087" modified="20200425185505099" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185505087" modified="20200425185505099" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200425185557992" modified="20200426182723824" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185557992" modified="20200426182723824" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200426182216686" modified="20200426182216695" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426182216686" modified="20200426182216695" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200426191235911" modified="20200426204243121" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426191235911" modified="20200426204243121" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200425185549765" modified="20200426182548644" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185549765" modified="20200426182548644" revision="0" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200426191543017" modified="20200426191636225" title="$:/config/Plugins/Disabled/$:/plugins/venomspinner/ghostwriter" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426191543017" modified="20200426191636225" revision="0" title="$:/config/Plugins/Disabled/$:/plugins/venomspinner/ghostwriter" type="text/vnd.tiddlywiki">
 <pre>no</pre>
 </div>
-<div created="20200106214031452" modified="20200425181117266" tags="tb" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200106214031452" modified="20200425181117266" revision="0" tags="tb" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
-<div created="20200426071318081" modified="20200426071318095" title="$:/config/Tiddlers/TitleLinks" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426071318081" modified="20200426071318095" revision="0" title="$:/config/Tiddlers/TitleLinks" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
-<div created="20200210145131741" modified="20200425181117272" tags="tb" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/viewrefscheckboxes" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200210145131741" modified="20200425181117272" revision="0" tags="tb" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/viewrefscheckboxes" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200426182630967" modified="20200426182630989" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/export-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426182630967" modified="20200426182630989" revision="0" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/export-tiddler" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200426182619285" modified="20200426182619299" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426182619285" modified="20200426182619299" revision="0" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
-<div created="20200426204358244" modified="20200426204413621" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/open-window" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426204358244" modified="20200426204413621" revision="0" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/open-window" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200426072241509" creator="5n0p3" modified="20200426204256902" modifier="5n0p3" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/permalink" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426072241509" creator="5n0p3" modified="20200426204256902" modifier="5n0p3" revision="0" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/permalink" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20200426205617022" modified="20200426205617022" title="$:/config/WikiParserRules/Inline/wikilink" revision="1" bag="default">
+<div bag="default" created="20200426205617022" modified="20200426205617022" revision="1" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" revision="0" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/Acknowledgements&quot;: {
@@ -10342,26 +10338,26 @@ placeholder=&quot;$placeholder$&quot;/&gt;
     }
 }</pre>
 </div>
-<div created="20200106211749103" modified="20200425182700118" tags="tb" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200106211749103" modified="20200425182700118" revision="0" tags="tb" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[[4096]]
 </pre>
 </div>
-<div created="20200304200133691" creator="nate" list="$:/.giffmex/.Stylesheet4tiddlyblink $:/.giffmex/meta/TiddlyBlink.gears.and.doo-hickeys $:/jd/fullscreen-editor/EditButton $:/.giffmex/ViewToolbar/new-note-here-datetime $:/.giffmex/ViewTemplate/refscontext TiddlyBlink" modified="20200425192044014" modifier="nate" tags="tb" title="$:/fullscreen-editor" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200304200133691" creator="nate" list="$:/.giffmex/.Stylesheet4tiddlyblink $:/.giffmex/meta/TiddlyBlink.gears.and.doo-hickeys $:/jd/fullscreen-editor/EditButton $:/.giffmex/ViewToolbar/new-note-here-datetime $:/.giffmex/ViewTemplate/refscontext TiddlyBlink" modified="20200425192044014" modifier="nate" revision="0" tags="tb" title="$:/fullscreen-editor" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200426095427672" modified="20200426095427709" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426095427672" modified="20200426095427709" revision="0" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki">
 <pre>index.html</pre>
 </div>
-<div created="20200426100347383" creator="5n0p3" modified="20200426100347400" modifier="5n0p3" title="$:/GitHub/Path" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426100347383" creator="5n0p3" modified="20200426100347400" modifier="5n0p3" revision="0" title="$:/GitHub/Path" type="text/vnd.tiddlywiki">
 <pre>/</pre>
 </div>
-<div created="20200426095059336" creator="5n0p3" modified="20200426100621741" modifier="5n0p3" title="$:/GitHub/Repo" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426095059336" creator="5n0p3" modified="20200426100621741" modifier="5n0p3" revision="0" title="$:/GitHub/Repo" type="text/vnd.tiddlywiki">
 <pre>5n0p3/5n0p3.github.io</pre>
 </div>
-<div created="20200426095036271" modified="20200426095039740" title="$:/GitHub/Username" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426095036271" modified="20200426095039740" revision="0" title="$:/GitHub/Username" type="text/vnd.tiddlywiki">
 <pre>5n0p3</pre>
 </div>
-<div created="20161030153009897" modified="20200426190052467" roundbtnbg="#c1c1c1" roundbtnspan="#fff" tags="$:/tags/Stylesheet $:/OverlaySidebar $:/irreverent-mudblood/ghostwriter" title="$:/irreverent-mudblood/overlay-sidebar/stylesheet" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20161030153009897" modified="20200426190052467" revision="0" roundbtnbg="#c1c1c1" roundbtnspan="#fff" tags="$:/tags/Stylesheet $:/OverlaySidebar $:/irreverent-mudblood/ghostwriter" title="$:/irreverent-mudblood/overlay-sidebar/stylesheet" type="text/vnd.tiddlywiki">
 <pre>.roundbtn {
 background-color:{{!!roundbtnbg}};
 font-size: 25px; 
@@ -10402,10 +10398,10 @@ opacity:1;
 fill: {{!!roundbtnspan}} !important;
 }</pre>
 </div>
-<div title="$:/isEncrypted" revision="0" bag="default">
+<div bag="default" revision="0" title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div caption="{{$:/core/images/full-screen-button}} edit in full screen" created="20190204123121582" creator="jd" description="Edit in full screen mode" modified="20200425181116965" modifier="jd" tags="tb $:/tags/ViewToolbar" title="$:/jd/fullscreen-editor/EditButton" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/full-screen-button}} edit in full screen" created="20190204123121582" creator="jd" description="Edit in full screen mode" modified="20200425181116965" modifier="jd" revision="0" tags="tb $:/tags/ViewToolbar" title="$:/jd/fullscreen-editor/EditButton" type="text/vnd.tiddlywiki">
 <pre>\whitespace trim
 &lt;$navigator story=&quot;$:/fullscreen-editor&quot;&gt;
 &lt;$button message=&quot;tm-edit-tiddler&quot; tooltip=&quot;Edit in full screen mode&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
@@ -10421,10 +10417,10 @@ fill: {{!!roundbtnspan}} !important;
 &lt;/$button&gt;
 &lt;/$navigator&gt;</pre>
 </div>
-<div created="20200425182852294" modified="20200425182854610" title="$:/language/DefaultNewTiddlerTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182852294" modified="20200425182854610" revision="0" title="$:/language/DefaultNewTiddlerTitle" type="text/vnd.tiddlywiki">
 <pre>OK GO</pre>
 </div>
-<div created="20200222183545341" description="the opposite of TiddlyWiki's usual color scheme" modified="20200425181117306" name="TiddlyBlink" tags="tb $:/tags/Palette" title="$:/palettes/TiddlyBlink" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div bag="default" created="20200222183545341" description="the opposite of TiddlyWiki's usual color scheme" modified="20200425181117306" name="TiddlyBlink" revision="0" tags="tb $:/tags/Palette" title="$:/palettes/TiddlyBlink" type="application/x-tiddler-dictionary">
 <pre>alert-background: #ffe476
 alert-border: #b99e2f
 alert-highlight: #881122
@@ -10539,13 +10535,13 @@ toolbar-done-button:
 untagged-background: #999999
 very-muted-foreground: #888888</pre>
 </div>
-<div created="20200126141319129" modified="20200425181117319" tags="tb $:/tags/Stylesheet" title="$:/plugins/danielo515/context/css" type="text/css" revision="0" bag="default">
+<div bag="default" created="20200126141319129" modified="20200425181117319" revision="0" tags="tb $:/tags/Stylesheet" title="$:/plugins/danielo515/context/css" type="text/css">
 <pre>.matched {background-color:#ffc;}
 .tw-context {
   border:0px solid #eee;background-color:#eee;
   word-break: break-all; word-wrap: break-word;}</pre>
 </div>
-<div author="Danielo Rodrigez" core-version="&gt;=5.1.0" created="20200304200213285" dependents="" description="Context search - provides visual highlight of search results" list="readme" modified="20200425181117325" plugin-type="plugin" source="https://github.com/danielo515/TW5-contextPlugin" tags="tb" title="$:/plugins/danielo515/ContextPlugin" type="application/json" version="2.1.0" revision="0" bag="default">
+<div author="Danielo Rodrigez" bag="default" core-version="&gt;=5.1.0" created="20200304200213285" dependents="" description="Context search - provides visual highlight of search results" list="readme" modified="20200425181117325" plugin-type="plugin" revision="0" source="https://github.com/danielo515/TW5-contextPlugin" tags="tb" title="$:/plugins/danielo515/ContextPlugin" type="application/json" version="2.1.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/danielo515/ContextPlugin/widgets/context.js&quot;: {
@@ -10593,10 +10589,10 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div created="20140530174219263" modified="20200425181116949" tags="tb contextPlugin" title="$:/plugins/danielo515/ContextPlugin/Caption" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20140530174219263" modified="20200425181116949" revision="0" tags="tb contextPlugin" title="$:/plugins/danielo515/ContextPlugin/Caption" type="text/vnd.tiddlywiki">
 <pre>Context search</pre>
 </div>
-<div created="20140418153435777" creator="danielo" modified="20200425181116933" modifier="danielo" module-type="widget" tags="tb" title="$:/plugins/danielo515/ContextPlugin/widgets/context.js" type="application/javascript" revision="0" bag="default">
+<div bag="default" created="20140418153435777" creator="danielo" modified="20200425181116933" modifier="danielo" module-type="widget" revision="0" tags="tb" title="$:/plugins/danielo515/ContextPlugin/widgets/context.js" type="application/javascript">
 <pre>/*\\
 title: $:/core/modules/widgets/danielo/context-widget.js
 type: application/javascript
@@ -10734,7 +10730,7 @@ exports.context = contextWidget;
 
 })();</pre>
 </div>
-<div author="Flibbles" core-version="&gt;=5.1.14" created="20190921200305594" dependents="" description="Relink - flexibility when relinking renamed tiddlers" list="readme configuration" modified="20200425181117336" plugin-type="plugin" source="https://github.com/flibbles/tw5-relink" tags="tb" title="$:/plugins/flibbles/relink" type="application/json" version="1.5.3" revision="0" bag="default">
+<div author="Flibbles" bag="default" core-version="&gt;=5.1.14" created="20190921200305594" dependents="" description="Relink - flexibility when relinking renamed tiddlers" list="readme configuration" modified="20200425181117336" plugin-type="plugin" revision="0" source="https://github.com/flibbles/tw5-relink" tags="tb" title="$:/plugins/flibbles/relink" type="application/json" version="1.5.3">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/flibbles/relink/js/bulkops.js&quot;: {
@@ -11320,7 +11316,7 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div author="jd" core-version="1.1.19" created="20190206061130276" creator="HC Haase" description="Fullscreen Editor" list="readme" modified="20200425181117343" modifier="HC Haase" plugin-type="plugin" tags="tb" title="$:/plugins/jd/fullscreen-editor" type="application/json" version="1.0.0" revision="0" bag="default">
+<div author="jd" bag="default" core-version="1.1.19" created="20190206061130276" creator="HC Haase" description="Fullscreen Editor" list="readme" modified="20200425181117343" modifier="HC Haase" plugin-type="plugin" revision="0" tags="tb" title="$:/plugins/jd/fullscreen-editor" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/jd/fullscreen-editor/EditButton&quot;: {
@@ -11371,7 +11367,7 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div author="Stephen Kimmel" created="20200304200251053" description="White List" modified="20200425181117383" plugin-type="plugin" tags="tb" title="$:/plugins/sk/WhiteList" type="application/json" version="0.0.3" revision="0" bag="default">
+<div author="Stephen Kimmel" bag="default" created="20200304200251053" description="White List" modified="20200425181117383" plugin-type="plugin" revision="0" tags="tb" title="$:/plugins/sk/WhiteList" type="application/json" version="0.0.3">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/sk/WhiteList&quot;: {
@@ -11399,7 +11395,7 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div author="AlainD" core-version="&gt;=5.1.13" created="20200304200257539" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" modified="20200425181117392" plugin-type="plugin" source="https://github.com/snowgoon88/TW5-extendedit" tags="tb" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.8.1" revision="0" bag="default">
+<div author="AlainD" bag="default" core-version="&gt;=5.1.13" created="20200304200257539" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" modified="20200425181117392" plugin-type="plugin" revision="0" source="https://github.com/snowgoon88/TW5-extendedit" tags="tb" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.8.1">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/snowgoon88/edit-comptext/config&quot;: {
@@ -11458,7 +11454,7 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div created="20200111192930718" modified="20200425181117101" tags="tb" title="$:/plugins/snowgoon88/edit-comptext/config" type="application/json" revision="0" bag="default">
+<div bag="default" created="20200111192930718" modified="20200425181117101" revision="0" tags="tb" title="$:/plugins/snowgoon88/edit-comptext/config" type="application/json">
 <pre>{
   &quot;configuration&quot;: {
       &quot;caseSensitive&quot; : false,
@@ -11476,7 +11472,7 @@ exports.context = contextWidget;
 }
 </pre>
 </div>
-<div author="Joao Bolila" dependents="" description="Highlight.js syntax highlighting" list="readme usage howto license" name="Highlight" plugin-type="plugin" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="Joao Bolila" bag="default" dependents="" description="Highlight.js syntax highlighting" list="readme usage howto license" name="Highlight" plugin-type="plugin" revision="0" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/config/HighlightPlugin/TypeMappings/application/javascript&quot;: {
@@ -11546,67 +11542,125 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div created="20200425182631857" modified="20200426071138911" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182631857" modified="20200426071138911" revision="0" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki">
 <pre>Free-Range Public-Garden Cultivator</pre>
 </div>
-<div created="20200425182622409" modified="20200426071051726" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182622409" modified="20200426071051726" revision="0" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>5n0p3 w1k1</pre>
 </div>
-<div caption="Words to never consider as CamelCase links" created="20150210172146298" creator="Stephen" description="Words that should never be considered as CamelCase wikiwords. Separate the individual words with commas (,)." modified="20200425181116981" modifier="Stephen" tags="tb ske" title="$:/sk/WhiteList" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="Words to never consider as CamelCase links" created="20150210172146298" creator="Stephen" description="Words that should never be considered as CamelCase wikiwords. Separate the individual words with commas (,)." modified="20200425181116981" modifier="Stephen" revision="0" tags="tb ske" title="$:/sk/WhiteList" type="text/vnd.tiddlywiki">
 <pre>LeDoux,McCloud,McDonald,TiddlyWiki,TiddlyWiki5,CamelCase,DuBay,McGraw,McCullough,LeGrange,NaCl,MeOH,EtOH,PiB,TiddlyTools,ResetFind,WikiText,WinBuilder,WinPE,ProgramData,TiddlyFox,GuillermoMartin,AndrewFraser,RochesterMNwalkers,DEdwardsCalgary,WalkaboutMM,HarveyG,McCoy,GeForce,SideBar,AirBnB,PayPal,LeBron,JavaScript,ExpressJet,CutePDF,McClouds,McElroy,McGovern,TableHelper,ShadowTiddler,WikiWords</pre>
 </div>
-<div created="20200426205339647" modified="20200426205343059" title="$:/state/dropdown/keyboardshortcut/add-field-286565879" revision="2" bag="default">
+<div bag="default" created="20200426205339647" modified="20200426205343059" revision="2" title="$:/state/dropdown/keyboardshortcut/add-field-286565879">
 <pre>close</pre>
 </div>
-<div created="20200426205321322" modified="20200426205509711" title="$:/state/tab--1963855381" revision="9" bag="default">
+<div bag="default" created="20200426205321322" modified="20200426205509711" revision="9" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20200426205312824" modified="20200426205513794" title="$:/state/tab--2112689675" revision="3" bag="default">
+<div bag="default" created="20200426205312824" modified="20200426205513794" revision="3" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20200426205457366" modified="20200426205457366" title="$:/state/tab--86143343" revision="1" bag="default">
+<div bag="default" created="20200426205457366" modified="20200426205457366" revision="1" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
 </div>
-<div created="20200426205517932" modified="20200426205529788" title="$:/state/tab--959111941" revision="5" bag="default">
+<div bag="default" created="20200426205517932" modified="20200426205529788" revision="5" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20200426205317692" modified="20200426205542462" title="$:/state/tab-1749438307" revision="18" bag="default">
+<div bag="default" created="20200426205317692" modified="20200426205542462" revision="18" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
-<div created="20200426205406034" modified="20200426205419946" title="$:/state/tab-2065006209" revision="6" bag="default">
+<div bag="default" created="20200426205406034" modified="20200426205419946" revision="6" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
 </div>
-<div title="$:/status/IsAnonymous" revision="1" bag="default">
+<div bag="default" revision="1" title="$:/status/IsAnonymous">
 <pre>yes</pre>
 </div>
-<div title="$:/status/IsLoggedIn" revision="2" bag="default">
+<div bag="default" revision="2" title="$:/status/IsLoggedIn">
 <pre>yes</pre>
 </div>
-<div title="$:/status/IsReadOnly" revision="1" bag="default">
+<div bag="default" revision="1" title="$:/status/IsReadOnly">
 <pre>no</pre>
 </div>
-<div title="$:/status/RequireReloadDueToPluginChange" revision="0" bag="default">
+<div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div title="$:/status/UserName" revision="1" bag="default">
+<div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20200426205308362" list="4096" modified="20200426205603340" title="$:/StoryList" revision="5" bag="default">
+<div list="4096" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200425181116810" tags="tb" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200425181116810" revision="0" tags="tb" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200127183739219" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/.giffmex/buttons/newnote-datetime $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/refresh $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/more-page-actions" modified="20200426182601272" tags="tb" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200127183739219" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/.giffmex/buttons/newnote-datetime $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/refresh $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/more-page-actions" modified="20200426182601272" revision="0" tags="tb" title="$:/tags/PageControls" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200128153730498" list="$:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/.giffmex/ViewTemplate/viewfullnotes $:/.giffmex/ViewTemplate/refscontext $:/.giffmex/ViewTemplate/refslinks $:/.giffmex/ViewTemplate/refstranscludecollapse" modified="20200425181116859" tags="tb" title="$:/tags/ViewTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200128153730498" list="$:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/.giffmex/ViewTemplate/viewfullnotes $:/.giffmex/ViewTemplate/refscontext $:/.giffmex/ViewTemplate/refslinks $:/.giffmex/ViewTemplate/refstranscludecollapse" modified="20200425181116859" revision="0" tags="tb" title="$:/tags/ViewTemplate" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200127144249151" list="$:/.giffmex/ViewToolbar/new-note-here $:/.giffmex/ViewToolbar/new-note-here-datetime $:/.giffmex/viewtoolbar/viewrefs $:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/.giffmex/ViewToolbar/viewrefscheckboxes" modified="20200426180435203" tags="tb" title="$:/tags/ViewToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200127144249151" list="$:/.giffmex/ViewToolbar/new-note-here $:/.giffmex/ViewToolbar/new-note-here-datetime $:/.giffmex/viewtoolbar/viewrefs $:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/.giffmex/ViewToolbar/viewrefscheckboxes" modified="20200426180435203" revision="0" tags="tb" title="$:/tags/ViewToolbar" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22" revision="0" bag="default">
+<div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/info/browser&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser&quot;,
+            &quot;text&quot;: &quot;yes&quot;
+        },
+        &quot;$:/info/node&quot;: {
+            &quot;title&quot;: &quot;$:/info/node&quot;,
+            &quot;text&quot;: &quot;no&quot;
+        },
+        &quot;$:/info/url/full&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/full&quot;,
+            &quot;text&quot;: &quot;https://5n0p3.github.io/&quot;
+        },
+        &quot;$:/info/url/host&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/host&quot;,
+            &quot;text&quot;: &quot;5n0p3.github.io&quot;
+        },
+        &quot;$:/info/url/hostname&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
+            &quot;text&quot;: &quot;5n0p3.github.io&quot;
+        },
+        &quot;$:/info/url/protocol&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
+            &quot;text&quot;: &quot;https:&quot;
+        },
+        &quot;$:/info/url/port&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/port&quot;,
+            &quot;text&quot;: &quot;&quot;
+        },
+        &quot;$:/info/url/pathname&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
+            &quot;text&quot;: &quot;/&quot;
+        },
+        &quot;$:/info/url/search&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/search&quot;,
+            &quot;text&quot;: &quot;&quot;
+        },
+        &quot;$:/info/url/origin&quot;: {
+            &quot;title&quot;: &quot;$:/info/url/origin&quot;,
+            &quot;text&quot;: &quot;https://5n0p3.github.io&quot;
+        },
+        &quot;$:/info/browser/screen/width&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
+            &quot;text&quot;: &quot;1440&quot;
+        },
+        &quot;$:/info/browser/screen/height&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
+            &quot;text&quot;: &quot;900&quot;
+        },
+        &quot;$:/info/browser/language&quot;: {
+            &quot;title&quot;: &quot;$:/info/browser/language&quot;,
+            &quot;text&quot;: &quot;en-gb&quot;
+        }
+    }
+}</pre>
+</div>
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/snowwhite/base&quot;: {
@@ -11617,7 +11671,7 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.22" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-priority="0" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/vanilla/themetweaks&quot;: {
@@ -11715,34 +11769,34 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div created="20200426190933600" modified="20200426192903950" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426190933600" modified="20200426192903950" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint" type="text/vnd.tiddlywiki">
 <pre>960px</pre>
 </div>
-<div created="20200426072030723" creator="5n0p3" modified="20200426192849452" modifier="5n0p3" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426072030723" creator="5n0p3" modified="20200426192849452" modifier="5n0p3" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth" type="text/vnd.tiddlywiki">
 <pre>340px</pre>
 </div>
-<div created="20200426192754114" modified="20200426192754132" title="$:/themes/tiddlywiki/vanilla/metrics/storyleft" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426192754114" modified="20200426192754132" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/storyleft" type="text/vnd.tiddlywiki">
 <pre>10px</pre>
 </div>
-<div created="20200426190418464" modified="20200426192948373" title="$:/themes/tiddlywiki/vanilla/metrics/storyright" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426190418464" modified="20200426192948373" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/storyright" type="text/vnd.tiddlywiki">
 <pre>1030px</pre>
 </div>
-<div created="20200426192757179" modified="20200426192808449" title="$:/themes/tiddlywiki/vanilla/metrics/storytop" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426192757179" modified="20200426192808449" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/storytop" type="text/vnd.tiddlywiki">
 <pre>0px</pre>
 </div>
-<div created="20200426190512504" modified="20200426192952634" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426190512504" modified="20200426192952634" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth" type="text/vnd.tiddlywiki">
 <pre>1030px</pre>
 </div>
-<div created="20200426190558086" modified="20200426192931112" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426190558086" modified="20200426192931112" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth" type="text/vnd.tiddlywiki">
 <pre>886px</pre>
 </div>
-<div created="20200127172539001" modified="20200426193023780" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200127172539001" modified="20200426193023780" revision="0" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
 <pre>fluid-fixed</pre>
 </div>
-<div created="20200127165334843" modified="20200425201815446" tags="tb" title="$:/view" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200127165334843" modified="20200425201815446" revision="0" tags="tb" title="$:/view" type="text/vnd.tiddlywiki">
 <pre>zoomin</pre>
 </div>
-<div created="20200422195514817" modified="20200426201853937" tags="journal" title="2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting" tmap.id="69f1e722-6809-486d-af20-609f655ce084" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200422195514817" modified="20200426201853937" revision="0" tags="journal" title="2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting" tmap.id="69f1e722-6809-486d-af20-609f655ce084" type="text/vnd.tiddlywiki">
 <pre>Just completed the third [[SanghaSeva]] [[online meeting]] we've had them fortnightly so far. From here we will go every three weeks.
 
 Each time we do it, [[L0v3]] and I both agree they are so worth doing. It's beautiful to not know who is going to show up, but some friends have been quite regular.
@@ -11760,12 +11814,12 @@ Each time we do it, [[L0v3]] and I both agree they are so worth doing. It's beau
 [[Journal Entry]]
 </pre>
 </div>
-<div created="20200423185654806" modified="20200426071745712" tags="journal" title="2020/04/23 @ 21:56 - Review of the emptiness drop in" tmap.id="05352e9f-e9ee-4e84-b096-af6d46f5b2ba" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200423185654806" modified="20200426071745712" revision="0" tags="journal" title="2020/04/23 @ 21:56 - Review of the emptiness drop in" tmap.id="05352e9f-e9ee-4e84-b096-af6d46f5b2ba" type="text/vnd.tiddlywiki">
 <pre>After today’s session we decided that we could offer a form on the website that would allow for participants to contact us (with questions and) arrange 1-1 meetings. 
 
 [[Journal Entry]]</pre>
 </div>
-<div color="#000000" created="20200425183521655" creator="nate" modified="20200426072547856" modifier="only" tags="journal" title="2020/04/25 @ 21:35 - Contemplation of Rob's Death" tmap.id="7ab15dab-3510-4530-8c0b-d654cad9106a" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" color="#000000" created="20200425183521655" creator="nate" modified="20200426072547856" modifier="only" revision="0" tags="journal" title="2020/04/25 @ 21:35 - Contemplation of Rob's Death" tmap.id="7ab15dab-3510-4530-8c0b-d654cad9106a" type="text/vnd.tiddlywiki">
 <pre>Well it's coming.
 
 I don't want it to, but it is.
@@ -11787,7 +11841,7 @@ Jai Rob. An impeccable life if such a thing is possible.
 
 [[Journal Entry]]</pre>
 </div>
-<div created="20200425185725775" creator="nate" modified="20200426202253120" modifier="only" tags="journal" title="2020/04/25 @ 21:57 - Get the Server Up" tmap.id="8cb39107-65a0-422b-a855-5b8f0bfa1bf0" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425185725775" creator="nate" modified="20200426202253120" modifier="only" revision="0" tags="journal" title="2020/04/25 @ 21:57 - Get the Server Up" tmap.id="8cb39107-65a0-422b-a855-5b8f0bfa1bf0" type="text/vnd.tiddlywiki">
 <pre>This is the code line to start the whole thing going via the Mac Terminal
 
 &lt;code&gt;cd (drag the folder with the wiki in it)&lt;/code&gt;
@@ -11803,7 +11857,7 @@ via [[Node.js install for TiddlyWiki|https://tiddlywiki.com/static/Installing%25
 
 [[Journal Entry]]</pre>
 </div>
-<div created="20200425192646000" creator="nate" modified="20200426072610838" modifier="only" tags="journal" title="2020/04/25 @ 22:26 - Just started to Rain" tmap.id="66d3678b-cac3-468d-9a5d-79eb9c741985" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425192646000" creator="nate" modified="20200426072610838" modifier="only" revision="0" tags="journal" title="2020/04/25 @ 22:26 - Just started to Rain" tmap.id="66d3678b-cac3-468d-9a5d-79eb9c741985" type="text/vnd.tiddlywiki">
 <pre>A good day for it.
 
 And then it stopped. Maybe a minute of hard rain.
@@ -11812,7 +11866,7 @@ And then it stopped. Maybe a minute of hard rain.
 
 [[Journal Entry]]</pre>
 </div>
-<div created="20200425194014546" creator="nate" modified="20200426072529630" modifier="only" tags="journal retreat-critique" title="2020/04/25 @ 22:40 - Opening, Steadying, Allowing" tmap.id="d3ffd136-530f-43e9-bf59-0cfdb98d2b8c" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425194014546" creator="nate" modified="20200426072529630" modifier="only" revision="0" tags="journal retreat-critique" title="2020/04/25 @ 22:40 - Opening, Steadying, Allowing" tmap.id="d3ffd136-530f-43e9-bf59-0cfdb98d2b8c" type="text/vnd.tiddlywiki">
 <pre>Tonight we completed our second online retreat with [[tovana]]. We called this one OSA: ''Opening, Steadying, Allowing''.
 
 &lt;&lt;&lt;I have to continuously remind myself that not knowing that it was good, is not the same as knowing it was not good.
@@ -11841,7 +11895,7 @@ I'm comparing it to the five day retreat. Also 50% of the people came from the e
 
 [[Journal Entry]]</pre>
 </div>
-<div created="20200425182710790" creator="nate" modified="20200426185531496" modifier="only" tags="outlines" title="4096" tmap.id="ef59266c-2a8a-42ae-96b6-5bec96c3a1ce" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425182710790" creator="nate" modified="20200426185531496" modifier="only" revision="0" tags="outlines" title="4096" tmap.id="ef59266c-2a8a-42ae-96b6-5bec96c3a1ce" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;&lt;
 Home is Where the [[L0v3]] is
 &lt;&lt;&lt;
@@ -11853,38 +11907,38 @@ Home is Where the [[L0v3]] is
 {{Journal Entry}}
 </pre>
 </div>
-<div created="20200426072742616" creator="5n0p3" modified="20200426100031642" modifier="5n0p3" title="5n0p3" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426072742616" creator="5n0p3" modified="20200426100031642" modifier="5n0p3" revision="0" title="5n0p3" type="text/vnd.tiddlywiki">
 <pre>GitHub baby. Simple as that.
 
 Anonymity matters. It's all an image and a ployed disguise.</pre>
 </div>
-<div created="20200426194830610" modified="20200426204448714" tags="TableOfContents" title="Books" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426194830610" modified="20200426204448714" revision="0" tags="TableOfContents" title="Books" type="text/vnd.tiddlywiki">
 <pre>Books I am reviewing:
 
 * [[Seeing That Frees]]</pre>
 </div>
-<div created="20200425195248835" creator="nate" modified="20200426180152909" modifier="only" tags="TableOfContents" title="Dharma" tmap.id="25e1e6b2-a77c-488c-91d3-eee78994de43" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425195248835" creator="nate" modified="20200426180152909" modifier="only" revision="0" tags="TableOfContents" title="Dharma" tmap.id="25e1e6b2-a77c-488c-91d3-eee78994de43" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;&lt;
 The main question for us is ''What is //My// Dharma?''
 &lt;&lt;&lt;
 </pre>
 </div>
-<div created="20200425192531701" creator="nate" modified="20200426072727706" modifier="5n0p3" title="I" tmap.id="f6e7d505-fcd5-4702-b910-ae3dd7ec47b1" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425192531701" creator="nate" modified="20200426072727706" modifier="5n0p3" revision="0" title="I" tmap.id="f6e7d505-fcd5-4702-b910-ae3dd7ec47b1" type="text/vnd.tiddlywiki">
 <pre>!!!Who am I?
 
 Why [[5n0p3]]?
 </pre>
 </div>
-<div created="20200425184405570" creator="nate" modified="20200426191921088" modifier="only" tags="sources TableOfContents" title="Journal Entry" tmap.id="6e3c9c80-ec52-4067-b98d-ab23f14eb7b0" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425184405570" creator="nate" modified="20200426191921088" modifier="only" revision="0" tags="sources TableOfContents" title="Journal Entry" tmap.id="6e3c9c80-ec52-4067-b98d-ab23f14eb7b0" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200425203815973" modified="20200426071530538" tags="outlines" title="L0v3" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425203815973" modified="20200426071530538" revision="0" tags="outlines" title="L0v3" type="text/vnd.tiddlywiki">
 <pre>A being</pre>
 </div>
-<div created="20200426072439404" creator="only" modified="20200426072514206" modifier="only" tags="" title="OK GO" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426072439404" creator="only" modified="20200426072514206" modifier="only" revision="0" tags="" title="OK GO" type="text/vnd.tiddlywiki">
 <pre>[[2020/04/25 @ 22:40 - Opening, Steadying, Allowing]]</pre>
 </div>
-<div created="20200426201333424" modified="20200426201755189" tags="5n0p3" title="Reddit's complete list of TiddlyWiki Add-ons" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426201333424" modified="20200426201755189" revision="0" tags="5n0p3" title="Reddit's complete list of TiddlyWiki Add-ons" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;&lt;
 *Collections
 *Themes
@@ -11892,10 +11946,10 @@ Why [[5n0p3]]?
 *List of Plugins available for TW5
 &lt;&lt;&lt;---via [[pluginsandresources - TiddlyWiki5|https://www.reddit.com/r/TiddlyWiki5/wiki/pluginsandresources]]</pre>
 </div>
-<div created="20200425192430521" creator="nate" modified="20200426072541612" modifier="only" title="Seeing That Frees" tmap.id="d9be1022-0064-4f42-a92e-4fa8724c2363" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200425192430521" creator="nate" modified="20200426072541612" modifier="only" revision="0" title="Seeing That Frees" tmap.id="d9be1022-0064-4f42-a92e-4fa8724c2363" type="text/vnd.tiddlywiki">
 <pre>Definitely the best [[Dharma]] book ([[I]] know of) for this generation. And probably of all time, regardless of the extent and breadth of my knowledge.</pre>
 </div>
-<div created="20200125152105770" modified="20200425182350257" tags=".sidebyside tb meta" title="TiddlyBlink" tmap.id="bf66d6f8-b7a5-4424-afd8-1725b521284b" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200125152105770" modified="20200425182350257" revision="0" tags=".sidebyside tb meta" title="TiddlyBlink" tmap.id="bf66d6f8-b7a5-4424-afd8-1725b521284b" type="text/vnd.tiddlywiki">
 <pre>Welcome to TiddlyBlink! ~TiddlyBlink is an adaptation of TiddlyWiki with the goal of helping you see connections between your ideas, and move quickly from one idea to another. It was inspired by the bi-directional linking found in Roam (https://roamresearch.com/), but built with capabilities already available in ~TiddlyWiki (https://tiddlywiki.com). See my example file [ext[here|https://giffmex.org/gifts/tiddlyblinkexample.html]].&lt;br&gt;&lt;br&gt;
 
 ''The basic idea:''
@@ -11914,10 +11968,10 @@ Below each tiddler (note card) is a list of links to any other tiddlers that lin
 
 &lt;span class=&quot;indent1&quot;&gt;&lt;$list filter=&quot;[is[system]tag[meta]sort[title]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;caption&quot;/&gt;&lt;/$link&gt;&lt;br&gt;&lt;/$list&gt;&lt;/span&gt;</pre>
 </div>
-<div created="20200128030902225" modified="20200425182350263" tags="tb meta" title="TiddlyBlink home" tmap.id="e2ecd7aa-11ef-447e-bb30-45a3ed9feb23" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200128030902225" modified="20200425182350263" revision="0" tags="tb meta" title="TiddlyBlink home" tmap.id="e2ecd7aa-11ef-447e-bb30-45a3ed9feb23" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;tabs &quot;TiddlyBlink .topicList .sourcesList .hideList&quot; &quot;TiddlyBlink&quot; &gt;&gt;</pre>
 </div>
-<div created="20200426205114620" modified="20200426205152140" tags="$:/tags/SideBar" title="ToC" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20200426205114620" modified="20200426205152140" revision="0" tags="$:/tags/SideBar" title="ToC" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
@@ -11931,7 +11985,7 @@ Below each tiddler (note card) is a list of links to any other tiddlers that lin
 
 <!--~~ Library modules ~~-->
 <div id="libraryModules" style="display:none;">
-<script data-tiddler-bag="default" data-tiddler-library="yes" data-tiddler-revision="0" data-tiddler-title="$:/library/sjcl.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">"use strict";var sjcl={cipher:{},hash:{},keyexchange:{},mode:{},misc:{},codec:{},exception:{corrupt:function(a){this.toString=function(){return"CORRUPT: "+this.message};this.message=a},invalid:function(a){this.toString=function(){return"INVALID: "+this.message};this.message=a},bug:function(a){this.toString=function(){return"BUG: "+this.message};this.message=a},notReady:function(a){this.toString=function(){return"NOT READY: "+this.message};this.message=a}}};
+<script data-tiddler-bag="default" data-tiddler-library="yes" data-tiddler-revision="0" data-tiddler-title="$:/library/sjcl.js" data-tiddler-type="application/javascript" type="text/javascript">"use strict";var sjcl={cipher:{},hash:{},keyexchange:{},mode:{},misc:{},codec:{},exception:{corrupt:function(a){this.toString=function(){return"CORRUPT: "+this.message};this.message=a},invalid:function(a){this.toString=function(){return"INVALID: "+this.message};this.message=a},bug:function(a){this.toString=function(){return"BUG: "+this.message};this.message=a},notReady:function(a){this.toString=function(){return"NOT READY: "+this.message};this.message=a}}};
 sjcl.cipher.aes=function(a){this.s[0][0][0]||this.O();var b,c,d,e,f=this.s[0][4],g=this.s[1];b=a.length;var h=1;if(4!==b&&6!==b&&8!==b)throw new sjcl.exception.invalid("invalid aes key size");this.b=[d=a.slice(0),e=[]];for(a=b;a<4*b+28;a++){c=d[a-1];if(0===a%b||8===b&&4===a%b)c=f[c>>>24]<<24^f[c>>16&255]<<16^f[c>>8&255]<<8^f[c&255],0===a%b&&(c=c<<8^c>>>24^h<<24,h=h<<1^283*(h>>7));d[a]=d[a-b]^c}for(b=0;a;b++,a--)c=d[b&3?a:a-4],e[b]=4>=a||4>b?c:g[0][f[c>>>24]]^g[1][f[c>>16&255]]^g[2][f[c>>8&255]]^g[3][f[c&
 255]]};
 sjcl.cipher.aes.prototype={encrypt:function(a){return t(this,a,0)},decrypt:function(a){return t(this,a,1)},s:[[[],[],[],[],[]],[[],[],[],[],[]]],O:function(){var a=this.s[0],b=this.s[1],c=a[4],d=b[4],e,f,g,h=[],k=[],l,n,m,p;for(e=0;0x100>e;e++)k[(h[e]=e<<1^283*(e>>7))^e]=e;for(f=g=0;!c[f];f^=l||1,g=k[g]||1)for(m=g^g<<1^g<<2^g<<3^g<<4,m=m>>8^m&255^99,c[f]=m,d[m]=f,n=h[e=h[l=h[f]]],p=0x1010101*n^0x10001*e^0x101*l^0x1010100*f,n=0x101*h[m]^0x1010100*m,e=0;4>e;e++)a[e][f]=n=n<<24^n>>>8,b[e][m]=p=p<<24^p>>>8;for(e=
@@ -11995,7 +12049,7 @@ b){var c={},d;for(d=0;d<b.length;d++)void 0!==a[b[d]]&&(c[b[d]]=a[b[d]]);return 
 </div>
 <!--~~ Boot kernel prologue ~~-->
 <div id="bootKernelPrefix" style="display:none;">
-<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/bootprefix.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">/*\
+<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/bootprefix.js" data-tiddler-type="application/javascript" type="text/javascript">/*\
 title: $:/boot/bootprefix.js
 type: application/javascript
 
@@ -12118,7 +12172,7 @@ if(typeof(exports) === "undefined") {
 </div>
 <!--~~ Boot kernel ~~-->
 <div id="bootKernel" style="display:none;">
-<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.js" data-tiddler-type="application/javascript" data-tiddler-revision="0" data-tiddler-bag="default" type="text/javascript">/*\
+<script data-tiddler-bag="default" data-tiddler-revision="0" data-tiddler-title="$:/boot/boot.js" data-tiddler-type="application/javascript" type="text/javascript">/*\
 title: $:/boot/boot.js
 type: application/javascript
 
