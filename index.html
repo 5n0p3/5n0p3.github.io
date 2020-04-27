@@ -52,6 +52,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 
 <!--~~ Raw markup ~~-->
 
+<meta name="robots" content="noindex">
 
 
 </head>
@@ -299,6 +300,8 @@ Error message and password prompt
 
 <li>$:/plugins/flibbles/relink</li>
 
+<li>$:/plugins/indieweb/core/rawMarkup</li>
+
 <li>$:/plugins/jd/fullscreen-editor</li>
 
 <li>$:/plugins/sk/WhiteList</li>
@@ -327,7 +330,15 @@ Error message and password prompt
 
 <li>$:/state/tab-2065006209</li>
 
+<li>$:/state/tab/moresidebar-1850697562</li>
+
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/toc/TableOfContents-Books--565514155</li>
+
+<li>$:/state/toc/TableOfContents-Dharma--565514155</li>
+
+<li>$:/state/toc/TableOfContents-Logbook--565514155</li>
 
 <li>$:/status/IsAnonymous</li>
 
@@ -373,7 +384,7 @@ Error message and password prompt
 
 <li>2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting</li>
 
-<li>2020/04/23 @ 21:56 - Review of the emptiness drop in</li>
+<li>2020/04/23 @ 21:56 - Review of the emptiness drop-in</li>
 
 <li>2020/04/25 @ 21:35 - Contemplation of Rob's Death</li>
 
@@ -383,15 +394,33 @@ Error message and password prompt
 
 <li>2020/04/27 @ 00:02 - How to Judge</li>
 
+<li>2020/04/27 @ 14:04 - Uninstall TiddlyWiki from a computer</li>
+
+<li>2020/04/27 @ 14:16 - A list of TiddlyWiki resources</li>
+
+<li>2020/04/27 @ 14:40 -</li>
+
+<li>2020/04/27 @ 15:31 - Why books don’t work by Andy Matuschak</li>
+
+<li>2020/04/27 @ 16:51 - The whole point of transclusion</li>
+
 <li>4096</li>
 
 <li>5n0p3</li>
 
+<li>Atmosphere of Attention</li>
+
 <li>Books</li>
+
+<li>Carl Sagan</li>
 
 <li>cultivator</li>
 
+<li>dana</li>
+
 <li>Dharma</li>
+
+<li>Draft of 'no-robots'</li>
 
 <li>I</li>
 
@@ -401,21 +430,37 @@ Error message and password prompt
 
 <li>meditation</li>
 
+<li>Meetings</li>
+
 <li>OK GO</li>
 
 <li>Reddit's complete list of TiddlyWiki Add-ons</li>
+
+<li>Retreat Critique</li>
+
+<li>robots no-index</li>
 
 <li>saṅkhāra</li>
 
 <li>Seeing That Frees</li>
 
+<li>Slaughterhouse-Five</li>
+
 <li>Table of Contents</li>
 
 <li>Technology</li>
 
+<li>Three parts of a practice</li>
+
 <li>TiddlyBlink</li>
 
 <li>TiddlyBlink home</li>
+
+<li>Tovana</li>
+
+<li>Way of Looking</li>
+
+<li>Way of Relating</li>
 
 </ul>
 </p>
@@ -431,7 +476,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200427084304564" modified="20200427095024331" tags="guides" title=".1. Set up TiddlyWiki on a computer" revision="5" bag="default">
+<div created="20200427084304564" modified="20200427110443991" tags="guides" title=".1. Set up TiddlyWiki on a computer" revision="9" bag="default">
 <pre>Having TiddlyWiki set up the right way means it is way smaller. Plus, I can use Safari with an autosaving Wiki. And can use all my system keyboard shortcuts, native spell checking, and other bonuses. As I use FireFox as my main browser I can also have an unusual fixed location for saving my TiddlyWiki files, for easy uploading to [[GitHub|.2. Set up TiddlyWiki on GitHub]].
 
 !!!Here's how to set up TiddlyWiki on the computer
@@ -450,11 +495,14 @@ Error message and password prompt
 
 Next [[set up TiddlyWiki on GitHub|.2. Set up TiddlyWiki on GitHub]] to view and edit it from any device anywhere.
 
+If you don't like it you can learn how to [[uninstall TiddlyWiki from your computer here|2020/04/27 @ 14:04 - Uninstall TiddlyWiki from a computer]].
+
+
 ---
 
 [[Technology]]</pre>
 </div>
-<div created="20200427080713380" modified="20200427094844777" tags="guides" title=".2. Set up TiddlyWiki on GitHub" revision="4" bag="default">
+<div created="20200427080713380" modified="20200427145653833" tags="guides" title=".2. Set up TiddlyWiki on GitHub" revision="7" bag="default">
 <pre>First I [[set up TiddlyWiki on a computer|.1. Set up TiddlyWiki on a computer]] the //right way//. You should do this too, but you don't need to.
 
 !!!To set up TiddlyWiki on GitHub
@@ -467,11 +515,12 @@ Upload a previously exported/saved TiddlyWiki website as a single `index.html` f
 
 Now you, and anyone else who finds the link, can visit your website at: `username.github.io`
 
-&lt;&lt;&lt;See [[Self-hosting TiddlyWiki with GitHub Pages|https://boffosocko.com/2020/04/04/self-hosting-tiddlywiki-with-github-pages/]] for where I learned that best.
+&lt;&lt;&lt;See [[Self-hosting TiddlyWiki with GitHub Pages|https://boffosocko.com/2020/04/04/self-hosting-tiddlywiki-with-github-pages/]] 
+This is the place I feel explains the process the best (ahem, okay, second only to this posting right here 😲).
 &lt;&lt;&lt;
 Next you need to [[set TiddlyWiki to save to Github|.3. Set TiddlyWiki to save to Github]] to make it editable from anywhere.
 
-As this is a private garden in public, did you consider you might want a [[no-robots]] command inserted in your file to stop inducing by search engines?
+As this is a private garden in public, did you consider you might want a [[robots no-index]] command inserted in your file to stop being including by search engines?
 
 ---
 
@@ -811,7 +860,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="search results in context" created="20200102141715979" creator="nate" modified="20200427053347195" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext" type="text/vnd.tiddlywiki" revision="12" bag="default">
+<div caption="search results in context" created="20200102141715979" creator="nate" modified="20200427133314729" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext" type="text/vnd.tiddlywiki" revision="15" bag="default">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -822,7 +871,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="links" created="20200126143031898" creator="nate" modified="20200427053345123" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki" revision="15" bag="default">
+<div caption="links" created="20200126143031898" creator="nate" modified="20200427133316765" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki" revision="18" bag="default">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -833,7 +882,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="simple transclusion" created="20200126142157739" creator="nate" modified="20200427053338981" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki" revision="26" bag="default">
+<div caption="simple transclusion" created="20200126142157739" creator="nate" modified="20200427134653168" modifier="nate" tags="refs tb" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki" revision="32" bag="default">
 <pre>&lt;hr&gt;
 
 References: &lt;br&gt;
@@ -841,7 +890,7 @@ References: &lt;br&gt;
 &lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[hide]!tag[outlines]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;span class=&quot;indent1&quot;&gt;&lt;$link&gt;&lt;span class=&quot;graybox&quot;&gt;&lt;$transclude field=&quot;text&quot; mode=&quot;block&quot; /&gt;&lt;/span&gt;&lt;/$link&gt;&lt;/span&gt;&lt;/$list&gt;
 </pre>
 </div>
-<div caption="simple transclusion without link text" created="20200427050959679" creator="nate" modified="20200427071924671" modifier="nate" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refstranscludecleannolinktext" type="text/vnd.tiddlywiki" revision="26" bag="default">
+<div caption="simple transclusion without link text" created="20200427050959679" creator="nate" modified="20200427134653169" modifier="nate" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refstranscludecleannolinktext" type="text/vnd.tiddlywiki" revision="35" bag="default">
 <pre>&lt;hr&gt;
 
 References: &lt;br&gt;
@@ -11530,6 +11579,10 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
+<div created="20200427132317629" modified="20200427133142271" tags="$:/tags/RawMarkup" title="$:/plugins/indieweb/core/rawMarkup" revision="2" bag="default">
+<pre>&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+</pre>
+</div>
 <div author="jd" core-version="1.1.19" created="20190206061130276" creator="HC Haase" description="Fullscreen Editor" list="readme" modified="20200425181117343" modifier="HC Haase" plugin-type="plugin" tags="tb" title="$:/plugins/jd/fullscreen-editor" type="application/json" version="1.0.0" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -11777,14 +11830,26 @@ exports.context = contextWidget;
 <div created="20200426213156900" modified="20200426213200195" title="$:/state/tab--959111941" revision="4" bag="default">
 <pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
-<div created="20200426213140387" modified="20200427092254964" title="$:/state/tab-1749438307" revision="8" bag="default">
+<div created="20200426213140387" modified="20200427132543522" title="$:/state/tab-1749438307" revision="11" bag="default">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200427092257158" modified="20200427092257158" title="$:/state/tab-2065006209" revision="1" bag="default">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20200427092257158" modified="20200427132547389" title="$:/state/tab-2065006209" revision="2" bag="default">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
-<div created="20200426213241432" modified="20200427094636130" title="$:/state/tab/sidebar--595412856" revision="39" bag="default">
-<pre>Table of Contents</pre>
+<div created="20200427144843042" modified="20200427144843042" title="$:/state/tab/moresidebar-1850697562" revision="1" bag="default">
+<pre>$:/core/ui/MoreSideBar/Missing</pre>
+</div>
+<div created="20200426213241432" modified="20200427150027571" title="$:/state/tab/sidebar--595412856" revision="53" bag="default">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20200427142106339" modified="20200427143210268" title="$:/state/toc/TableOfContents-Books--565514155" revision="10" bag="default">
+<pre>close</pre>
+</div>
+<div created="20200427142232500" modified="20200427143146693" title="$:/state/toc/TableOfContents-Dharma--565514155" revision="8" bag="default">
+<pre>close</pre>
+</div>
+<div created="20200427143346274" modified="20200427143751260" title="$:/state/toc/TableOfContents-Logbook--565514155" revision="9" bag="default">
+<pre>open</pre>
 </div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>yes</pre>
@@ -11801,7 +11866,7 @@ exports.context = contextWidget;
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="4096" title="$:/StoryList" revision="246" bag="default">
+<div created="20200427143333032" list="[[2020/04/27 @ 14:16 - A list of TiddlyWiki resources]] [[robots no-index]] [[Way of Relating]] [[Way of Looking]] [[Atmosphere of Attention]] Tovana [[Retreat Critique]] [[2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting]] [[2020/04/25 @ 22:40 - Opening, Steadying, Allowing]] Logbook $:/ControlPanel [[2020/04/27 @ 16:51 - The whole point of transclusion]] Technology 4096" modified="20200427150035988" title="$:/StoryList" revision="461" bag="default">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200425181116810" tags="tb" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11952,7 +12017,7 @@ exports.context = contextWidget;
 <div created="20200127165334843" modified="20200425201815446" tags="tb" title="$:/view" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>zoomin</pre>
 </div>
-<div created="20200422195514817" modified="20200426211544470" tags="journal" title="2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting" tmap.id="69f1e722-6809-486d-af20-609f655ce084" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200422195514817" modified="20200427143748607" tags="journal" title="2020/04/22 @ 22:55 - 3rd SanghaSeva online meeting" tmap.id="69f1e722-6809-486d-af20-609f655ce084" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>Just completed the third [[SanghaSeva]] [[online meeting]] we've had them fortnightly so far. From here we will go every three weeks.
 
 Each time we do it, [[L0v3]] and I both agree they are so worth doing. It's beautiful to not know who is going to show up, but some friends have been quite regular.
@@ -11967,18 +12032,24 @@ Each time we do it, [[L0v3]] and I both agree they are so worth doing. It's beau
 * Then an open discussion:
 ** Including around the topic of consuming news, interconnectivity, helpful views
 
-[[Logbook]]
+---
+
+[[Logbook]] &amp; [[Meetings]]
 </pre>
 </div>
-<div created="20200423185654806" modified="20200426211544503" tags="journal" title="2020/04/23 @ 21:56 - Review of the emptiness drop in" tmap.id="05352e9f-e9ee-4e84-b096-af6d46f5b2ba" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>After today’s session we decided that we could offer a form on the website that would allow for participants to contact us (with questions and) arrange 1-1 meetings. 
+<div created="20200423185654806" modified="20200427141052574" tags="journal" title="2020/04/23 @ 21:56 - Review of the emptiness drop-in" tmap.id="05352e9f-e9ee-4e84-b096-af6d46f5b2ba" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<pre>After today’s emptiness drop-in session we decided that we could offer a form on the website that would allow for participants to contact us (with questions and) arrange 1-1 meetings. 
 
 [[Logbook]]</pre>
 </div>
-<div color="#000000" created="20200425183521655" creator="nate" modified="20200426211544532" modifier="only" tags="journal" title="2020/04/25 @ 21:35 - Contemplation of Rob's Death" tmap.id="7ab15dab-3510-4530-8c0b-d654cad9106a" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Well it's coming.
+<div color="#000000" created="20200425183521655" creator="nate" modified="20200427141355884" modifier="only" tags="journal" title="2020/04/25 @ 21:35 - Contemplation of Rob's Death" tmap.id="7ab15dab-3510-4530-8c0b-d654cad9106a" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<pre>Well it's coming. Rob is dying. Or he's more dying now than he was before. But wow, wow, wow. He's even doing this remarkably well.
 
 I don't want it to, but it is.
+
+&lt;&lt;&lt;So it goes
+––[[Slaughterhouse-Five]]
+&lt;&lt;&lt;
 
 And there is a part of me, that feels like the more he lives the more he endures. 
 
@@ -11997,10 +12068,8 @@ Jai Rob. An impeccable life if such a thing is possible.
 
 [[Logbook]]</pre>
 </div>
-<div created="20200425192646000" creator="nate" modified="20200427054059651" modifier="only" tags="journal" title="2020/04/25 @ 22:26 - Just started to Rain" tmap.id="66d3678b-cac3-468d-9a5d-79eb9c741985" type="text/vnd.tiddlywiki" revision="1" bag="default">
-<pre>A good day for it.
-
-And then it stopped. Maybe a minute of hard rain.
+<div created="20200425192646000" creator="nate" modified="20200427141022476" modifier="only" tags="journal" title="2020/04/25 @ 22:26 - Just started to Rain" tmap.id="66d3678b-cac3-468d-9a5d-79eb9c741985" type="text/vnd.tiddlywiki" revision="2" bag="default">
+<pre>A good day for rain. And then it stopped. Maybe a minute of hard rain.
 
 How the heart responds to a change in pressure.
 
@@ -12011,8 +12080,8 @@ How the heart responds to a change in pressure.
 
 [[Logbook]]</pre>
 </div>
-<div created="20200425194014546" creator="nate" modified="20200426211544567" modifier="only" tags="journal retreat-critique" title="2020/04/25 @ 22:40 - Opening, Steadying, Allowing" tmap.id="d3ffd136-530f-43e9-bf59-0cfdb98d2b8c" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Tonight we completed our second online retreat with [[tovana]]. We called this one OSA: ''Opening, Steadying, Allowing''.
+<div created="20200425194014546" creator="nate" modified="20200427144832236" modifier="only" tags="journal retreat-critique" title="2020/04/25 @ 22:40 - Opening, Steadying, Allowing" tmap.id="d3ffd136-530f-43e9-bf59-0cfdb98d2b8c" type="text/vnd.tiddlywiki" revision="2" bag="default">
+<pre>Tonight we completed our second online retreat with [[Tovana]]. We called this one OSA: ''Opening, Steadying, Allowing''.
 
 &lt;&lt;&lt;I have to continuously remind myself that not knowing that it was good, is not the same as knowing it was not good.
 &lt;&lt;&lt;
@@ -12038,15 +12107,96 @@ I'm comparing it to the five day retreat. Also 50% of the people came from the e
 
 ---
 
-[[Logbook]]</pre>
+[[Logbook]] &amp; [[Retreat Critique]]</pre>
 </div>
-<div created="20200426210208587" modified="20200427071956669" tags="" title="2020/04/27 @ 00:02 - How to Judge" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<div caption="Judging" created="20200426210208587" modified="20200427142402738" tags="Dharma" title="2020/04/27 @ 00:02 - How to Judge" type="text/vnd.tiddlywiki" revision="2" bag="default">
 <pre>Discernment and Judging
 
 &lt;&lt;&lt; Think, not of a Supreme Court Justice sitting on her bench, passing a final verdict of guilt or innocence, but of a piano teacher listening to you play. She’s not passing a final verdict on your potential as apianist. Instead, she’s judging a work in progress: listening to your intention for the performance, listening to your execution of that intention, and then deciding whether it works. If it doesn’t, she has to figure out if the problem is with theintention or the execution, make helpful suggestions, and then let you try again.
 &lt;&lt;&lt;---via [[With Each &amp; Every Breath: A Guide to Meditation |https://www.dhammatalks.org/Archive/Writings/Ebooks/WithEachAndEveryBreath_181215.pdf]]
 
 [[Dharma]]</pre>
+</div>
+<div created="20200427110234842" modified="20200427110634021" title="2020/04/27 @ 14:04 - Uninstall TiddlyWiki from a computer" revision="3" bag="default">
+<pre>If you don't like having TiddlyWiki on your computer, it is a simple command away from being kicked off.
+
+ In terminal type `sudo npm uninstall -g tiddlywiki`
+
+---
+
+[[Technology]]</pre>
+</div>
+<div created="20200427111644896" modified="20200427150339369" tags="" title="2020/04/27 @ 14:16 - A list of TiddlyWiki resources" type="text/vnd.tiddlywiki" revision="5" bag="default">
+<pre>Here are a few places where I've found great collections of TiddlyWiki add-ons or customisations, and how-to's.
+
+
+[[TiddlyWik Resources|https://tiddlywiki.com/static/Resources.html]]
+
+
+A fine wiki and collection of how to wiki:  [[TiddlerTool|https://ooktech.com/jed/ExampleWikis/TiddlerTools/]]
+
+A plugin that makes tiddlywiki a multi-user wiki on node  [[OokTech/TW5-Bob on GitHub|https://github.com/OokTech/TW5-Bob]]
+
+A JavaScript bookmarklet that copies a highlighted portion of a web page and it's URL. Then go to your wiki and then simply type ctrl-v to create a new tiddler with not only the highlight pre-blockquoted, but with a via link to the original source pre-formatted as a wiki link. by [[Chris Aldrich|http://tw.boffosocko.com/#Bookmarklet%20for%20pasting%20content%20into%20TiddlyWiki]]
+
+
+Notes from the online meeting related to wikis and the IndieWeb, user interfaces, functionalities, examples of wikis and how they differ from blogs and other social media interfaces, and everyones’ ideas surrounding these. [[2020/Pop-ups/GardenAndStream - IndieWeb|https://indieweb.org/2020/Pop-ups/GardenAndStream]]
+
+See also the [[TiddlyWiki page at  indieweb.org|https://indieweb.org/TiddlyWiki]]
+
+---
+
+[[Technology]]</pre>
+</div>
+<div created="20200427114036775" modified="20200427114555850" tags="" title="2020/04/27 @ 14:40 -" type="text/vnd.tiddlywiki" revision="2" bag="default">
+<pre>Some directions on how to save TiddlyWiki files as `.tid` files. 
+
+Then add them to a folder containing other `.tid` files, in the same location as a `tiddlywiki.info`. Then rendering them as a website.
+
+This could be useful for someone who has [[set their TiddlyWiki to save to Github|.3. Set TiddlyWiki to save to Github]] and occasionally may edit online there, but who mainly runs and saves a parallel install on a local server.
+
+I've set my wiki to have a save button in the view options, from there I can save as `.tid`. The rest is explained in the link quoted below.
+
+&lt;&lt;&lt;How to build a TiddlyWiki5 from individual tiddlers
+&lt;&lt;&lt;---via [[How to build a TiddlyWiki5 from individual tiddlers: TiddlyWiki — a non-linear personal web notebook|https://tiddlywiki.com/static/How%2520to%2520build%2520a%2520TiddlyWiki5%2520from%2520individual%2520tiddlers.html]]
+
+---
+
+[[Technology]]</pre>
+</div>
+<div created="20200427123138087" modified="20200427124615113" tags="" title="2020/04/27 @ 15:31 - Why books don’t work by Andy Matuschak" type="text/vnd.tiddlywiki" revision="5" bag="default">
+<pre>Why we need to read with intelligence and intelligent note taking to get the most out of &quot;perhaps the greatest of human inventions&quot;^^[[1|Carl Sagan]]^^: the written form.
+
+&lt;&lt;&lt;In these brief notes, we’ll explore why books so often don’t work, and why they succeed when they do...Armed with that understanding, we’ll glimpse not only how we might improve books as a medium, but also how we might weave unfamiliar new forms—not from paper, and not from pixels, but from insights about human cognition.
+&lt;&lt;&lt;---via [[Why books don’t work by Andy Matuschak|https://andymatuschak.org/books/]]
+
+---
+
+[[Books]]</pre>
+</div>
+<div caption="The Beauty of Transclusion" created="20200427135136345" modified="20200427145111372" tags="Logbook" title="2020/04/27 @ 16:51 - The whole point of transclusion" revision="6" bag="default">
+<pre>The beauty of transclusion is that we can include text from one post into another one.
+
+This is an idea that provokes a sense of the [[saṅkhāra]] of a book, talk, article.
+
+To make the principle work I need to make short pithy, repeatable patterns of understanding. 
+
+That is why I refer to my [[Logbook]] as a location of singular insights, decisions, and dictates, that can be remixed into new contexts among fresh paragraphs.
+
+For example in a talk about [[The so-called Hindrances]] I might wish to explain [[RAIN]] or [[Atmosphere of Attention]]. Ideas I have spouted out before in similar ways to how I would like to spout it today. Yet because context matters, those atomic ideas can gather into new molecules/cells of expression.
+
+A live example, below the line I've included the text from the atom post [[cultivator]]:
+
+---
+
+{{cultivator}}
+
+---
+
+This has worked well, it needn't have been between lines, I made those only to clarify where it is. Sadly by doing this example I have discovered that complex atomic posts (with lists, quotes, and all that, do not render correctly.
+
+---
+[[Technology]] &amp; [[Logbook]]</pre>
 </div>
 <div caption="About" created="20200425182710790" creator="nate" modified="20200427073652848" modifier="only" tags="outlines TableOfContents" title="4096" tmap.id="ef59266c-2a8a-42ae-96b6-5bec96c3a1ce" type="text/vnd.tiddlywiki" revision="8" bag="default">
 <pre>Huh! You found this website of [[5n0p3]], interesting... Now you're here feel free to have a look around.
@@ -12091,12 +12241,26 @@ Here we'll trust that ''obscurity'' and vagary ''vagueness'' will be enough prot
 
 [[5n0p3]] is //probably// pronounced //Snope//. It //may// be a variant of nope––itself a variant of no. But it's //probably// not. Or //maybe// it's an obfuscated backronym, like: It'''5'' ''n0''t ''p''rivate ''3''nough. But then again, it's //maybe// just a series of characters I liked the feel of as I wrote them.</pre>
 </div>
+<div created="20200427144941455" modified="20200427145320429" title="Atmosphere of Attention" revision="3" bag="default">
+<pre>!!!!Synonyms
+
+* [[Way of Relating]]
+* [[Way of Looking]]
+
+---
+
+[[Dharma]]</pre>
+</div>
 <div created="20200426194830610" modified="20200426204448714" tags="TableOfContents" title="Books" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Books I am reviewing:
 
 * [[Seeing That Frees]]</pre>
 </div>
-<div created="20200427054909002" modified="20200427070408476" title="cultivator" revision="2" bag="default">
+<div created="20200427123517012" modified="20200427123750054" title="Carl Sagan" type="text/vnd.tiddlywiki" revision="2" bag="default">
+<pre>&lt;&lt;&lt;Carl Edward Sagan (/ˈseɪɡən/; November 9, 1934 – December 20, 1996) was an American astronomer, planetary scientist, cosmologist, astrophysicist, astrobiologist, author, science popularizer, philosopher, and science communicator in astronomy and other natural sciences. He is best known as a science popularizer and communicator. //(And author of Cosmos and Contact.)//
+[[https://en.wikipedia.org/wiki/Carl_Sagan]]</pre>
+</div>
+<div created="20200427054909002" modified="20200427142453150" title="cultivator" revision="6" bag="default">
 <pre>Cultivator is another word for a being who 'does' [[meditation]]. It recognises that anything we do brings something into being. 
 
 See [[saṅkhāra]] for more about this.
@@ -12105,10 +12269,23 @@ See [[saṅkhāra]] for more about this.
 
 [[Dharma]]</pre>
 </div>
+<div created="20200427144053838" modified="20200427144752339" title="dana" revision="4" bag="default">
+<pre>Often translated as generosity. It is one of the paramis.
+
+Literally it means to give, in common usage it implies //freely-given//: //given without expectation// (from either side). This would be phrased &quot;//as dana//&quot;.
+
+
+
+When used in the phrase &quot;//on dana//&quot; it implies the event was offered freely, yet the participants have the opportunity to make a donation for what was offered.</pre>
+</div>
 <div created="20200425195248835" creator="nate" modified="20200426180152909" modifier="only" tags="TableOfContents" title="Dharma" tmap.id="25e1e6b2-a77c-488c-91d3-eee78994de43" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;&lt;
 The main question for us is ''What is //My// Dharma?''
 &lt;&lt;&lt;
+</pre>
+</div>
+<div created="20200427145630327" modified="20200427145630327" title="Draft of 'no-robots'" revision="116" bag="default">
+<pre>Adding `&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;` to the html header. Like I've done with $:/plugins/indieweb/core/rawMarkup thanks to [[&lt;hr&gt;]]http://tw.boffosocko.com/#%24%3A%2Fplugins%2Findieweb%2Fcore%2FrawMarkup]]
 </pre>
 </div>
 <div created="20200425192531701" creator="nate" modified="20200426072727706" modifier="5n0p3" title="I" tmap.id="f6e7d505-fcd5-4702-b910-ae3dd7ec47b1" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12120,10 +12297,10 @@ Why [[5n0p3]]?
 <div created="20200425203815973" modified="20200426071530538" tags="outlines" title="L0v3" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>A being</pre>
 </div>
-<div created="20200425184405570" creator="nate" modified="20200426211544577" modifier="only" tags="sources TableOfContents" title="Logbook" tmap.id="6e3c9c80-ec52-4067-b98d-ab23f14eb7b0" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Logbook - click arrow for selected insights" created="20200425184405570" creator="nate" modified="20200427143628905" modifier="only" tags="sources TableOfContents" title="Logbook" tmap.id="6e3c9c80-ec52-4067-b98d-ab23f14eb7b0" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre></pre>
 </div>
-<div created="20200427054945448" modified="20200427055454477" title="meditation" revision="2" bag="default">
+<div caption="What is Meditation?" created="20200427054945448" modified="20200427142453147" tags="Dharma" title="meditation" revision="4" bag="default">
 <pre>Meditation is the word we're stuck with. It is translated from the word bhāvanā, meaning the activity of bringing into being.
 
 &lt;&lt;&lt;Bhāvanā (Pali; Sanskrit, also bhāvana) literally means &quot;development&quot; or &quot;cultivating&quot; or &quot;producing&quot; in the sense of &quot;calling into existence&quot;.
@@ -12132,6 +12309,15 @@ Why [[5n0p3]]?
 ---
 
 [[Dharma]]</pre>
+</div>
+<div created="20200427142527872" modified="20200427142638480" tags="Logbook" title="Meetings" revision="1" bag="default">
+<pre>Wouldn't it be nice to have a place where all the meetings are listed?
+
+Add a list:
+
+---
+
+[[Logbook]]</pre>
 </div>
 <div created="20200426072439404" creator="only" modified="20200426072514206" modifier="only" tags="" title="OK GO" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[2020/04/25 @ 22:40 - Opening, Steadying, Allowing]]</pre>
@@ -12144,7 +12330,18 @@ Why [[5n0p3]]?
 *List of Plugins available for TW5
 &lt;&lt;&lt;---via [[pluginsandresources - TiddlyWiki5|https://www.reddit.com/r/TiddlyWiki5/wiki/pluginsandresources]]</pre>
 </div>
-<div created="20200427070427841" modified="20200427071712024" title="saṅkhāra" revision="2" bag="default">
+<div created="20200427142648071" modified="20200427143033880" tags="Logbook" title="Retreat Critique" revision="2" bag="default">
+<pre>It is an important and valuable principle of running events that we embody the third part of the [[Three parts of a practice]]: [[discernment|2020/04/27 @ 00:02 - How to Judge]].
+
+---
+
+[[Logbook]]</pre>
+</div>
+<div created="20200427145350574" modified="20200427145829367" title="robots no-index" revision="6" bag="default">
+<pre>Adding `&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;` to the html header. This didn't seem simple to do with TiddlyWiki, but I've done it with $:/plugins/indieweb/core/rawMarkup thanks to [[Chris Aldrich|http://tw.boffosocko.com/#%24%3A%2Fplugins%2Findieweb%2Fcore%2FrawMarkup]]
+</pre>
+</div>
+<div caption="Saṅkhāra" created="20200427070427841" modified="20200427142434334" tags="Dharma" title="saṅkhāra" revision="5" bag="default">
 <pre>Depending on the context Saṅkhāra is used a collective and non-collective noun, a verb, an adverb, or an adjective. This complicates its location in the mind-made system, and the list of synonyms below. But this undefinability opens the range of possible understandings about how things come into being.
 
 Some words are best left with no fixed translation so they can be endlessly explored.
@@ -12169,8 +12366,21 @@ Some words are best left with no fixed translation so they can be endlessly expl
 
 [[Dharma]]</pre>
 </div>
-<div created="20200425192430521" creator="nate" modified="20200426072541612" modifier="only" title="Seeing That Frees" tmap.id="d9be1022-0064-4f42-a92e-4fa8724c2363" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Definitely the best [[Dharma]] book ([[I]] know of) for this generation. And probably of all time, regardless of the extent and breadth of my knowledge.</pre>
+<div created="20200425192430521" creator="nate" modified="20200427143232698" modifier="only" tags="Books" title="Seeing That Frees" tmap.id="d9be1022-0064-4f42-a92e-4fa8724c2363" type="text/vnd.tiddlywiki" revision="3" bag="default">
+<pre>Seeing That Frees by Rob Burbea is definitely the best [[Dharma]] book ([[I]] know of) for this generation. And probably of all time, regardless of the extent and breadth of my knowledge.
+
+---
+
+[[Books]]</pre>
+</div>
+<div created="20200427141405188" modified="20200427142154730" tags="Books" title="Slaughterhouse-Five" revision="7" bag="default">
+<pre>Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance with Death is a science fiction-infused anti-war novel by Kurt Vonnegut, first published in 1969. - https://en.wikipedia.org/wiki/Slaughterhouse-Five
+
+Salman Rushdie speaking of the sweet combination of deep irony and heartfelt sensitivity that Kurt Vonnegut was suggesting in the apparently blithe, yet truly inexplicable holding of true loss: “So it goes.” - [[https://www.newyorker.com/books/page-turner/what-kurt-vonneguts-slaughterhouse-five-tells-us-now]]
+
+---
+
+[[Books]]</pre>
 </div>
 <div caption="ToC" created="20200426205114620" list="StartHere Books Dharma Logbook" list-before="$:/core/ui/SideBar/Open" modified="20200427070232314" tags="$:/tags/SideBar" title="Table of Contents" type="text/vnd.tiddlywiki" revision="4" bag="default">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -12181,6 +12391,22 @@ Some words are best left with no fixed translation so they can be endlessly expl
 </div>
 <div caption="Tech" created="20200427053010846" modified="20200427094906871" tags="TableOfContents" title="Technology" revision="5" bag="default">
 <pre>Some of the technological gubbins I use to create my digital life, and first off all it took to hack together this site in particular.</pre>
+</div>
+<div created="20200427143050408" modified="20200427143129944" tags="Dharma" title="Three parts of a practice" revision="2" bag="default">
+<pre>!!!I'll unpack this more later:
+
+# Beginning
+# Middle
+# End
+
+---
+!!!!AKA
+
+#Intention - know what you're going to do (also have a sense of how you are).
+#Attention - be somewhat present, sensitive, and creative with what you're doing.
+#Discernment - notice how it went, what was cultivated, how you now are.
+
+#*You could also make a plan for next time.</pre>
 </div>
 <div created="20200125152105770" modified="20200425182350257" tags=".sidebyside tb meta" title="TiddlyBlink" tmap.id="bf66d6f8-b7a5-4424-afd8-1725b521284b" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Welcome to TiddlyBlink! ~TiddlyBlink is an adaptation of TiddlyWiki with the goal of helping you see connections between your ideas, and move quickly from one idea to another. It was inspired by the bi-directional linking found in Roam (https://roamresearch.com/), but built with capabilities already available in ~TiddlyWiki (https://tiddlywiki.com). See my example file [ext[here|https://giffmex.org/gifts/tiddlyblinkexample.html]].&lt;br&gt;&lt;br&gt;
@@ -12203,6 +12429,24 @@ Below each tiddler (note card) is a list of links to any other tiddlers that lin
 </div>
 <div created="20200128030902225" modified="20200425182350263" tags="tb meta" title="TiddlyBlink home" tmap.id="e2ecd7aa-11ef-447e-bb30-45a3ed9feb23" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;tabs &quot;TiddlyBlink .topicList .sourcesList .hideList&quot; &quot;TiddlyBlink&quot; &gt;&gt;</pre>
+</div>
+<div created="20200427143848151" modified="20200427144832231" title="Tovana" revision="4" bag="default">
+<pre>Insight society of Israel who offer residential mediation retreats on [[dana]].</pre>
+</div>
+<div created="20200427145134629" modified="20200427145320429" title="Way of Looking" revision="2" bag="default">
+<pre>A concept central to [[Seeing That Frees]], there is always a way of looking operating. We never see without [[saṅkhāra]], some mode of shaping experience.
+
+I use this term synonymously with [[Way of Relating]], [[Atmosphere of Attention]].</pre>
+</div>
+<div created="20200427145017238" modified="20200427145320427" title="Way of Relating" revision="1" bag="default">
+<pre>!Synonyms
+
+* [[Way of Looking]]
+* [[Atmosphere of Attention]]
+
+---
+
+[[Dharma]]</pre>
 </div>
 
 
