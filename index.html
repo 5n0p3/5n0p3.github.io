@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>5n0p3 w1k1 — Free-Range Public-Garden Cultivator</title>
+<title>5n0p3's w1k1 — Open and Free Cultivations Free-Range Public-Garden</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -156,6 +156,8 @@ Error message and password prompt
 
 <li>.topicList</li>
 
+<li>'</li>
+
 <li>$:/.giffmex/.Stylesheet4tiddlyblink</li>
 
 <li>$:/.giffmex/actions/new-journal</li>
@@ -226,11 +228,15 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
 
@@ -410,6 +416,8 @@ Error message and password prompt
 
 <li>2020/04/28 @ 16:15 - Just Happening</li>
 
+<li>2020/04/29 @ 08:37 - You can't translcude yourself</li>
+
 <li>4096</li>
 
 <li>5n0p3</li>
@@ -488,7 +496,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200427084304564" modified="20200427110444111" tags="guides" title=".1. Set up TiddlyWiki on a computer" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Set up TiddlyWiki on a computer" created="20200427084304564" modified="20200428203226177" tags="guides Technology" title=".1. Set up TiddlyWiki on a computer" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Having TiddlyWiki set up the right way means it is way smaller. Plus, I can use Safari with an autosaving Wiki. And can use all my system keyboard shortcuts, native spell checking, and other bonuses. As I use FireFox as my main browser I can also have an unusual fixed location for saving my TiddlyWiki files, for easy uploading to [[GitHub|.2. Set up TiddlyWiki on GitHub]].
 
 !!!Here's how to set up TiddlyWiki on the computer
@@ -514,7 +522,7 @@ If you don't like it you can learn how to [[uninstall TiddlyWiki from your compu
 
 [[Technology]]</pre>
 </div>
-<div created="20200427080713380" modified="20200427145653909" tags="guides" title=".2. Set up TiddlyWiki on GitHub" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Set up TiddlyWiki on GitHub" created="20200427080713380" modified="20200428203438106" tags="guides Technology" title=".2. Set up TiddlyWiki on GitHub" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>First I [[set up TiddlyWiki on a computer|.1. Set up TiddlyWiki on a computer]] the //right way//. You should do this too, but you don't need to.
 
 !!!To set up TiddlyWiki on GitHub
@@ -552,10 +560,10 @@ via [[Node.js install for TiddlyWiki|https://tiddlywiki.com/static/Installing%25
 
 [[Logbook]] &amp; [[Technology]]</pre>
 </div>
-<div created="20200427090853223" modified="20200427094810465" tags="guides" title=".3. Set TiddlyWiki to save to Github" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200427090853223" modified="20200429064312084" tags="guides" title=".3. Set TiddlyWiki to save to Github" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Saving your whole project/website to GitHub means we can edit it anywhere. That's the main advantage of hosting on GitHub and not on one of our own servers. It is also free and more anonymous to visitors.
 
-#Go to [[$:/ControlPanel]] from your TiddlyWiki site (that link will show you my settings, but it might be helpful to see a working example)
+#Go to Settings/ControlPanel on your TiddlyWiki site
 #Navigate to the `Saving` tab
 #Navigate to `GitHub Saver`
 #Enter your details as follows:
@@ -622,6 +630,14 @@ placeholder:&quot;&quot; &gt;&gt;</pre>
 &quot;$:/temp/list-search-example&quot;
 &quot;$:/core/ui/ListItemTemplate&quot;
 placeholder:&quot;&quot; &gt;&gt;</pre>
+</div>
+<div created="20200429055240614" modified="20200429065537761" tags="" title="'" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>|!All Atom Posts|!View Settings|
+|^{{$:/core/ui/SideBar/Recent}}|^{{$:/core/ui/SideBar/Tools}}{{$:/core/ui/SideBar/More}}|
+|!All Settings –– Control Panel|&lt;|
+|{{$:/ControlPanel}}|&lt;|
+{{$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols}}
+</pre>
 </div>
 <div created="20191010123116672" creator="nate" modified="20200425192212009" modifier="nate" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4tiddlyblink" type="text/css" revision="0" bag="default">
 <pre>/*BOXES*/
@@ -840,23 +856,10 @@ with
 <div &gt;"="" <$transclude="" caption="parallel" created="20190624061500276" creator="Gloom" infodesc="For temporarily displaying a tiddler in the sidebar (without having to tag it). Type the tiddler title in the text field and tiddler will sidpay below it." mode="&quot;block&quot;" modified="20200427050032115" modifier="Gloom" tags="tb *sidebar" tiddler="{{$=&quot;/temp/sbartidddisplayvalue}}" title="$:/.giffmex/sidebar/parallel2" tooltip="For temporarily displaying a tiddler in the sidebar (without having to tag it)" type="application/x-tiddler" {{$="/.giffmex/sidebar/parallel}} &lt;br&gt;&lt;h2&gt;&lt;$list filter=&quot;[{$:/temp/sbartidddisplayvalue}is[tiddler]]&quot; emptyMessage=&quot;tiddler doesn't exist&quot; &gt;&lt;/$list&gt;&lt;/h2&gt;" revision="0" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/core/images/options-button}}" created="20200129233103456" modified="20200427051429047" tags="tb $:/tags/SideBar" title="$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define tagreset() 
-&lt;$list filter=&quot;[tag[refs]sort[created]] -[[$(currentTiddler)$]]&quot; variable=&quot;removeme&quot;&gt;
-&lt;$action-listops  $tiddler=&lt;&lt;removeme&gt;&gt; $tags=&quot;+[remove[$:/tags/ViewTemplate]]&quot;/&gt;
-&lt;/$list&gt;
-&lt;$action-deletefield dummy/&gt;
-\end
+<div caption="view settings {{$:/core/images/options-button}}" created="20200129233103456" modified="20200429065403655" tags="tb $:/tags/SideBar" title="$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;span class=&quot;graybox&quot;&gt;
 
-Click the palette icon below to ''select a color palette'' from a dropdown. Default is ~TiddlyBlink. TiddlyWiki default is Vanilla. Note that dark themes may obscure some features.
-
-Click here: {{$:/core/ui/Buttons/palette}}
-
-&lt;hr&gt;
-
-&lt;span class=&quot;graybox&quot;&gt;
-
-''View references as:''
+''View related atoms as:''
 
 &lt;$list filter=&quot;[tag[refs]sort[title]]&quot;&gt;
 &lt;$list filter=&quot;[all[current]tag[$:/tags/ViewTemplate]]&quot;&gt;
@@ -1099,15 +1102,16 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <div created="20200425182800266" modified="20200426211613824" title="$:/config/NewJournal/Tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20200425183610837" creator="nate" modified="20200426211544283" modifier="nate" title="$:/config/NewJournal/Text" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>---
+<div created="20200425183610837" creator="nate" modified="20200429054612598" modifier="nate" title="$:/config/NewJournal/Text" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>
+---
 
-[[Logbook]]</pre>
+That's [[my feeling|Logbook]] about that right now...</pre>
 </div>
 <div created="20191225174624729" modified="20200425182844187" tags="tb" title="$:/config/NewJournal/Title" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>YYYY/0MM/0DD @ 0hh:0mm - </pre>
 </div>
-<div created="20200425183646041" modified="20200426071157729" modifier="nate" tags="5n0p3" title="$:/config/NewTiddler/Tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200425183646041" modified="20200429054104235" modifier="nate" title="$:/config/NewTiddler/Tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20200425185514078" modified="20200425185514091" title="$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -1116,6 +1120,9 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <div created="20200425185537858" modified="20200425185537870" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
+<div created="20200429063404398" modified="20200429063404412" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>hide</pre>
+</div>
 <div created="20200425185544708" modified="20200426182547765" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>hide</pre>
 </div>
@@ -1123,6 +1130,9 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <pre>show</pre>
 </div>
 <div created="20200425185505087" modified="20200425185505099" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>show</pre>
+</div>
+<div created="20200429063920871" modified="20200429063922757" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
 <div created="20200425185557992" modified="20200426182723824" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -10537,7 +10547,7 @@ placeholder=&quot;$placeholder$&quot;/&gt;
     }
 }</pre>
 </div>
-<div caption="tech" created="20200427050424286" modified="20200427050424397" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="tech" created="20200427050424286" modified="20200429064345607" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-more-sidebar&quot;&gt;
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; default={{$:/config/DefaultMoreSidebarTab}} state=&quot;$:/state/tab/moresidebar&quot; class=&quot;tc-vertical tc-sidebar-tabs-more&quot; /&gt;
 &lt;/div&gt;</pre>
@@ -10578,11 +10588,11 @@ $button$
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="all" created="20200427050238783" modified="20200427050630203" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Recent" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="all" created="20200427050238783" modified="20200429060150599" title="$:/core/ui/SideBar/Recent" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
 </pre>
 </div>
-<div caption="tools" created="20200427050548487" modified="20200427050548619" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="tools" created="20200427050548487" modified="20200429064401714" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define lingo-base() $:/language/ControlPanel/
 \define config-title()
 $:/config/PageControlButtons/Visibility/$(listItem)$
@@ -11821,11 +11831,11 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div created="20200425182631857" modified="20200426071138911" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Free-Range Public-Garden Cultivator</pre>
+<div created="20200425182631857" modified="20200429053942268" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[Open and Free]] [[Cultivations]] &lt;br&gt;Free-Range Public-Garden</pre>
 </div>
-<div created="20200425182622409" modified="20200426071051726" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>5n0p3 w1k1</pre>
+<div created="20200425182622409" modified="20200429061224848" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[5n0p3's w1k1|4096]]</pre>
 </div>
 <div caption="Words to never consider as CamelCase links" created="20150210172146298" creator="Stephen" description="Words that should never be considered as CamelCase wikiwords. Separate the individual words with commas (,)." modified="20200425181116981" modifier="Stephen" tags="tb ske" title="$:/sk/WhiteList" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>LeDoux,McCloud,McDonald,TiddlyWiki,TiddlyWiki5,CamelCase,DuBay,McGraw,McCullough,LeGrange,NaCl,MeOH,EtOH,PiB,TiddlyTools,ResetFind,WikiText,WinBuilder,WinPE,ProgramData,TiddlyFox,GuillermoMartin,AndrewFraser,RochesterMNwalkers,DEdwardsCalgary,WalkaboutMM,HarveyG,McCoy,GeForce,SideBar,AirBnB,PayPal,LeBron,JavaScript,ExpressJet,CutePDF,McClouds,McElroy,McGovern,TableHelper,ShadowTiddler,WikiWords</pre>
@@ -11845,7 +11855,7 @@ exports.context = contextWidget;
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="4096" title="$:/StoryList" revision="1" bag="default">
+<div list="4096" title="$:/StoryList" revision="2" bag="default">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200425181116810" tags="tb" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12234,7 +12244,7 @@ Meaning the simpler the [[atom]], the better the transclusion formats.</pre>
 <div created="20200428065803727" modified="20200428065934208" tags="" title="2020/04/28 @ 09:58 - Structures Form" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>One [[atom]] can be linked to another atom in multiple ways, to make a [[molecule]] and multiple molecules could be gathered into [[cells]], then into larger [[bodies of text]].</pre>
 </div>
-<div created="20200428071046650" modified="20200428072349305" tags="" title="2020/04/28 @ 10:10 - Keyboard Shortcuts for User" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Keyboard Shortcuts for Editing this Site" created="20200428071046650" modified="20200428203646581" tags="Technology" title="2020/04/28 @ 10:10 - Keyboard Shortcuts for User" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Keyboard Shortcuts for the Wiki User
 
 ''add-field''	Add the new field to the tiddler	`Enter`
@@ -12315,30 +12325,38 @@ If you'd like to have more screen for the content you can ''toggle the sidebar's
 
 FYI: an [[editor has even more keyboard shortcuts|2020/04/28 @ 10:10 - Keyboard Shortcuts for User]]</pre>
 </div>
-<div created="20200428130935878" modified="20200428131514689" tags="" title="2020/04/28 @ 16:05 - Take a Siesta" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200428130935878" modified="20200428203936767" tags="" title="2020/04/28 @ 16:05 - Take a Siesta" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Why we need a siesta, especially if we didn't [[sleep|Sleep]] enough the night before:
 
 &lt;&lt;&lt;Biologists have actually been able to measure this physiological dip in our alertness—what science calls a postprandial dip—through changes in our metabolic system, as well as adjustments in our brain waves, and in our cognitive reaction times. 
 &lt;&lt;&lt;[[How Many Hours of Sleep Do You Actually Need?|https://getpocket.com/explore/item/how-many-hours-of-sleep-do-you-actually-need]]
 
 
-</pre>
+Note to Self: Sure you could press on, and still be okay. But snooze and be better. If you can.</pre>
 </div>
-<div created="20200428130613609" modified="20200428131334809" tags="" title="2020/04/28 @ 16:06 - Slept Enough" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200428130613609" modified="20200428204251237" tags="" title="2020/04/28 @ 16:06 - Slept Enough" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!![[Sleep]] deprivation also deprives us of the perception of how sleep deprived we are.
 
-“You don’t know you are sleep deprived when you are sleep deprived,” says Walker, “That’s why so many people fool themselves into thinking they are one of those people who can get away with six hours of sleep or less.”
+&lt;&lt;&lt;You don’t know you are sleep deprived when you are sleep deprived. That’s why so many people fool themselves into thinking they are one of those people who can get away with six hours of sleep or less.
+&lt;&lt;&lt;
 
-...
-
-When someone tells you the reason they can only get five hours of sleep is that they simply have too much to do, “I tell them, I’m sorry, but there’s an irony in your statement. The reason you are left with so much to do could likely be because you are only getting five hours of sleep and your cognitive functioning is deficient, so it's taking you forever to do everything.&quot; [[Matthew Walker, the director of the sleep and neuroimaging lab at the University of California|https://getpocket.com/explore/item/how-many-hours-of-sleep-do-you-actually-need]]
-</pre>
+&lt;&lt;&lt;When someone tells you the reason they can only get five hours of sleep is that they simply have too much to do, I tell them, &quot;I’m sorry, but there’s an irony in your statement. The reason you are left with so much to do could likely be because you are only getting five hours of sleep and ''your cognitive functioning is deficient'', so it's taking you forever to do everything.&quot; 
+&lt;&lt;&lt;
+&lt;&lt;&lt;[[Matthew Walker, the director of the sleep and neuroimaging lab at the University of California|https://getpocket.com/explore/item/how-many-hours-of-sleep-do-you-actually-need]]
+&lt;&lt;&lt;</pre>
 </div>
 <div created="20200428131542564" modified="20200428134502021" title="2020/04/28 @ 16:15 - Just Happening" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>To say an experience is just happening, is a mode of attending that allows for a lessening of the additional layers we normally impute.  Such as the triple arising of a doer, a done to, and a doing. As we can see in the [[emptiness of walking]].</pre>
 </div>
-<div caption="About" created="20200425182710790" creator="nate" modified="20200428072655185" modifier="only" tags="outlines TableOfContents" title="4096" tmap.id="ef59266c-2a8a-42ae-96b6-5bec96c3a1ce" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Huh! You found this website of [[5n0p3]], interesting... Now you're here feel free to have a look around.
+<div created="20200429053558161" modified="20200429053839509" tags="5n0p3" title="2020/04/29 @ 08:37 - You can't translcude yourself" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>You can't translcude yourself
+
+[[Hello World|Logbook]]
+
+{{2020/04/29 @ 08:37 - You can't translcude yourself}}</pre>
+</div>
+<div caption="About" created="20200425182710790" creator="nate" modified="20200429061311480" modifier="only" tags="outlines TableOfContents" title="4096" tmap.id="ef59266c-2a8a-42ae-96b6-5bec96c3a1ce" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Huh! You found [[5n0p3|5n0p3]][[']][[s w1k1|5n0p3]], interesting... Now you're here feel free to have a look around.
 
 !!!Start where you are
 !!!!Or pretend you have another alternative, if you prefer...
