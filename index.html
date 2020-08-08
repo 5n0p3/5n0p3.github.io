@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/_5n0p3/FreelinksOn-OffOnSideBar</li>
+
 <li>$:/_5n0p3/pageControl/downloadHTML</li>
 
 <li>$:/ak/plugins/TWCrossLinks</li>
@@ -150,6 +152,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
 
@@ -179,7 +183,7 @@ Error message and password prompt
 
 <li>$:/state/tab-1749438307</li>
 
-<li>$:/state/tab-2065006209</li>
+<li>$:/state/tab/sidebar--595412856</li>
 
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
@@ -282,8 +286,6 @@ Error message and password prompt
 <li>fabrication</li>
 
 <li>feeling-tone</li>
-
-<li>Freelinks On/Off on Side Bar</li>
 
 <li>full body awareness</li>
 
@@ -399,6 +401,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div bag="default" created="20200807090041332" list-after="$:/core/ui/SideBarSegments/page-controls" modified="20200808100604812" revision="1" tags="$:/tags/SideBarSegment Tech 5n0p3-Mod" title="$:/_5n0p3/FreelinksOn-OffOnSideBar" type="text/vnd.tiddlywiki">
+<pre>&lt;$checkbox tiddler=&quot;$:/config/Freelinks/Enable&quot; field=&quot;text&quot; checked=&quot;yes&quot; unchecked=&quot;no&quot; default=&quot;no&quot;&gt; &lt;$link to=&quot;$:/config/Freelinks/Enable&quot;&gt;Show Cross Site Keywords as Links&lt;/$link&gt; &lt;/$checkbox&gt;</pre>
+</div>
 <div bag="default" created="20200728171159847" modified="20200728173118874" revision="0" tags="$:/tags/PageControls" title="$:/_5n0p3/pageControl/downloadHTML" type="text/vnd.tiddlywiki">
 <pre>\define lingo-base() $:/language/ControlPanel/Tools/Download/
 &lt;$button class=&quot;tc-btn-invisible tc-tiddlylink&quot;&gt;
@@ -592,7 +597,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200808090733942" modified="20200808091715745" title="$:/config/Freelinks/Enable">
+<div created="20200808090733942" modified="20200808090735250" title="$:/config/Freelinks/Enable">
 <pre>yes</pre>
 </div>
 <div created="20200808091336523" modified="20200808091336523" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
@@ -600,6 +605,9 @@ Error message and password prompt
 </div>
 <div created="20200808091337692" modified="20200808091337692" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
+</div>
+<div created="20200808100559669" modified="20200808100559669" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" created="20200804085241173" dependents="" description="TiddlyWiki5 core" list="readme" modified="20200808082849267" name="Core" plugin-priority="0" plugin-type="plugin" revision="0" title="$:/core" type="application/json" version="5.1.23-prerelease">
 <pre>{
@@ -10215,11 +10223,11 @@ Error message and password prompt
 <div bag="default" created="20200808090237918" modified="20200808091333891" revision="5" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div bag="default" created="20200808090235521" modified="20200808091744381" revision="1" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div bag="default" created="20200808090235521" modified="20200808091332659" revision="1" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20200808091745983" modified="20200808091745983" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20200808100448598" modified="20200808100448598" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200808091335273" modified="20200808091335273" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -10239,7 +10247,7 @@ Error message and password prompt
 <div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20200808091658273" list="$:/ControlPanel Welcome [[Talks by Date]] [[Mindfulness of Mind States]]" modified="20200808091740943" title="$:/StoryList">
+<div created="20200808100509763" list="$:/_5n0p3/FreelinksOn-OffOnSideBar Welcome" modified="20200808100509763" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10255,7 +10263,7 @@ Error message and password prompt
         },
         &quot;$:/info/startup-timestamp&quot;: {
             &quot;title&quot;: &quot;$:/info/startup-timestamp&quot;,
-            &quot;text&quot;: &quot;20200808091641655&quot;
+            &quot;text&quot;: &quot;20200808091109412&quot;
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
@@ -10299,7 +10307,7 @@ Error message and password prompt
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
-            &quot;text&quot;: &quot;en-gb&quot;
+            &quot;text&quot;: &quot;en&quot;
         }
     }
 }</pre>
@@ -10718,9 +10726,6 @@ Shall we have a moment of silence?
 </div>
 <div bag="default" created="20200808055803905" modified="20200808085932804" revision="0" tags="Keywords" title="feeling-tone" type="text/vnd.tiddlywiki">
 <pre>See also [[vedanā]], [[vedana]]</pre>
-</div>
-<div bag="default" created="20200807090041332" list-after="$:/core/ui/SideBarSegments/page-controls" modified="20200808063513560" revision="1" tags="$:/tags/SideBarSegment Tech 5n0p3-Mod" title="Freelinks On/Off on Side Bar" type="text/vnd.tiddlywiki">
-<pre>&lt;$checkbox tiddler=&quot;$:/config/Freelinks/Enable&quot; field=&quot;text&quot; checked=&quot;yes&quot; unchecked=&quot;no&quot; default=&quot;no&quot;&gt; &lt;$link to=&quot;$:/config/Freelinks/Enable&quot;&gt;Show Cross Site Keywords as Links&lt;/$link&gt; &lt;/$checkbox&gt;</pre>
 </div>
 <div bag="default" created="20200726093306169" modified="20200808085932808" revision="0" tags="Keywords" title="full body awareness" type="text/vnd.tiddlywiki">
 <pre>See [[pleasant breath]]</pre>
